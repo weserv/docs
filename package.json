@@ -1,0 +1,37 @@
+{
+  "name": "@weserv/docs",
+  "version": "0.1.0",
+  "description": "Documentation for images.weserv.nl",
+  "homepage": "https://github.com/weserv/docs#readme",
+  "bugs": {
+    "url": "https://github.com/weserv/images/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weserv/docs.git"
+  },
+  "license": "MIT",
+  "author": "Kleis Auke Wolthuizen",
+  "scripts": {
+    "postinstall": "cd .vuepress/theme && npm install",
+    "build": "vuepress build --temp .temp",
+    "dev": "vuepress dev --temp .temp",
+    "lint": "eslint .vuepress --fix --ext .js,.vue",
+    "show-help": "vuepress --help"
+  },
+  "dependencies": {
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10",
+    "vue-server-renderer": "^2.6.10"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.0.3",
+    "@vuepress/plugin-blog": "^1.2.4",
+    "@vuepress/plugin-pwa": "^1.0.3",
+    "eslint": "^6.3.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "file-loader": "^4.2.0",
+    "line-awesome": "github:icons8/line-awesome",
+    "vuepress": "^1.0.3"
+  }
+}

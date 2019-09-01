@@ -1,0 +1,120 @@
+# Format
+
+Controls the output properties of the image.
+
+## Adaptive filter <Parameter text="&af"/><Badge text="New!" type="warn" vertical="middle"/>
+
+Use adaptive row filtering for reducing the PNG file size. This only works when the output image is `png`.
+
+## Base64 (data URL) <Parameter text="&encoding=base64" vertical="middle"/>
+
+Encodes the image to be used directly in the src= of the `<img>`-tag.
+Use [this link](/?url=ory.weserv.nl/lichtenstein.jpg&crop=100,100,720,530&encoding=base64) to see the output result.
+
+More info: [Issue #59 - Return image base64 encoded](https://github.com/weserv/images/issues/59).
+
+```
+//images.weserv.nl/?url=ory.weserv.nl/lichtenstein.jpg&crop=100,100,720,530&encoding=base64
+```
+
+## Cache-Control <Parameter text="&maxage=" vertical="middle"/><Badge text="New!" type="warn" vertical="middle"/>
+
+Defines for how long an image should be cached by the browser. This will change the `max-age` of the
+`Cache-Control` HTTP-header.
+
+We define a "far-future expiration" of 1 year by default. Valid durations that can be specified are:
+- 1 month (31 days)
+- 2 months
+- 3 months
+- 6 months
+- 1 year (365 days) - default
+
+The duration can be specified in days and years, using the following suffixes:
+- `d`: days
+- `y`: years, 365 days
+
+A value without a suffix means seconds. It is recommended to always specify a suffix.
+
+More info: [Issue #186 - Increase Cache-Control: max-age= to 1 year instead of 1 month](https://github.com/weserv/images/issues/186).
+
+```
+//images.weserv.nl?url=ory.weserv.nl/lichtenstein.jpg&w=100&maxage=31d
+```
+
+## Compression level <Parameter text="&l="/><Badge text="New!" type="warn" vertical="middle"/>
+
+The zlib compression level. Use a value between `0` (no Deflate) and `9` (maximum Deflate). The default
+value is `6`. This only works when the output image is `png`.
+
+## Default image <Parameter text="&default="/>
+
+If there is a problem loading an image, then a error is shown. However, there might be a need where
+instead of giving a broken image to the user, you want a default image to be delivered.
+
+More info: [Issue #37 - Return default image if the image's URL not found](https://github.com/weserv/images/issues/37).
+
+The URL must not include a `default` querystring (if it does, it will be ignored).
+
+```html
+<img src="//images.weserv.nl/?url=example.org/noimage.jpg&default=ssl:images.weserv.nl%2F%3Furl%3Dory.weserv.nl/lichtenstein.jpg%26w%3D300">
+```
+![Default image](/?url=example.org/noimage.jpg&default=ssl:images.weserv.nl%2F%3Furl%3Dory.weserv.nl/lichtenstein.jpg%26w%3D300)
+
+## Filename <Parameter text="&filename="/>
+
+To specify the filename returned in the `Content-Disposition` header. The filename must only contain
+alphanumeric characters.
+
+More info: [Issue #122 - Specify filename](https://github.com/weserv/images/issues/122).
+
+## Interlace / progressive <Parameter text="&il" vertical="middle"/>
+
+Adds interlacing to GIF and PNG. JPEG's become progressive.
+
+More info: [Issue #50 - Add parameter to use progressive JPEGs](https://github.com/weserv/images/issues/50).
+
+```html
+<img src="//images.weserv.nl/?url=ory.weserv.nl/lichtenstein.jpg&w=300&il">
+```
+![Interlace / progressive](/?url=ory.weserv.nl/lichtenstein.jpg&w=300&il)
+
+## Number of pages <Parameter text="&n="/><Badge text="New!" type="warn" vertical="middle"/>
+
+To select the the number of pages to render. The default value is `1`. Set to `-1` to mean "until the end
+of the document".
+
+::: tip
+`-1` will be useful if you need to resize a animated WebP or GIF image.
+:::
+
+```html
+<img src="//images.weserv.nl/?url=ory.weserv.nl/banana.webp&h=300&output=gif&n=-1">
+```
+![Number of pages](/?url=ory.weserv.nl/banana.webp&h=300&output=gif&n=-1)
+
+## Output <Parameter text="&output=" vertical="middle"/>
+
+Encodes the image to a specific format. Accepts `jpg`, `png`, `gif`, `tiff`, `webp` or `json`. If none is
+given, it will honor the origin image format.
+
+More info: [Issue #62 - Format conversion](https://github.com/weserv/images/issues/62).
+
+```html
+<img src="//images.weserv.nl/?url=ory.weserv.nl/lichtenstein.jpg&w=300&output=webp">
+```
+![Output](/?url=ory.weserv.nl/lichtenstein.jpg&w=300&output=webp)
+
+## Page <Parameter text="&page="/>
+
+To load a given page (for an PDF, TIFF and multi-size ICO file). The value is numbered from zero. For a
+multi-resolution image, you can use `-1` to get the largest page and `-2` to get the smallest page.
+
+## Quality <Parameter text="&q=" vertical="middle"/>
+
+Defines the quality of the image. Use values between `0` and `100`. Defaults to `85`. This only works
+when the output image is `jpg`, `tiff` or `webp`.
+
+```html
+<img src="//images.weserv.nl/?url=ory.weserv.nl/lichtenstein.jpg&w=300&q=20">
+```
+![Quality](/?url=ory.weserv.nl/lichtenstein.jpg&w=300&q=20)
