@@ -3,6 +3,7 @@ title: Introducing API version 4
 editLink: false
 date: 2018-07-29
 summary: Switched to OpenResty and LuaJIT, introduced a friendlier URI parser, plus some new parameters were added.
+sidebar: auto
 ---
 
 # Introducing API version 4

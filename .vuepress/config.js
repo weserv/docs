@@ -21,16 +21,7 @@ module.exports = {
     sidebarDepth: 3,
     algolia: {
       indexName: 'images_weserv',
-      apiKey: '206416be8208020aafb1730fd2c7d813',
-      // Override the default VuePress `lang:en-US` facet filter.
-      // TODO: Remove when:
-      // https://github.com/algolia/docsearch-configs/blob/master/configs/images_weserv.json
-      // is updated to the VuePress config.
-      algoliaOptions: {
-        facetFilters: [
-          ''
-        ]
-      }
+      apiKey: '206416be8208020aafb1730fd2c7d813'
     },
     nav: [
       {
@@ -48,21 +39,15 @@ module.exports = {
     ],
     sidebar: {
       '/docs/': [
-        {
-          title: 'Documentation - API 5',
-          collapsable: false,
-          children: [
-            '',
-            'quick-reference',
-            'size',
-            'fit',
-            'crop',
-            'mask',
-            'orientation',
-            'adjustment',
-            'format',
-          ]
-        },
+        '',
+        'quick-reference',
+        'size',
+        'fit',
+        'crop',
+        'mask',
+        'orientation',
+        'adjustment',
+        'format'
       ],
     }
   }

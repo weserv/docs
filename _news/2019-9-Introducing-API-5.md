@@ -3,6 +3,7 @@ title: Introducing API version 5
 editLink: false
 date: 2019-09-01
 summary: Rewrote the entire codebase to C++, support for animated WebP and GIF images, plus many more improvements.
+sidebar: auto
 ---
 
 # Introducing API version 5
@@ -44,7 +45,7 @@ An additional feature of this module is that it's easy to check show your curren
 ```bash
 $ curl -i https://images.weserv.nl/quota
 HTTP/1.1 200 OK
-Date: Mon, 12 Aug 2019 00:00:00 GMT
+Date: Sun, 01 Sep 2019 00:00:00 GMT
 X-RateLimit-Limit: 700
 X-RateLimit-Remaining: 700
 X-RateLimit-Reset: 0

@@ -15,6 +15,6 @@
   "author": "Kleis Auke Wolthuizen",
   "main": "index.js",
   "devDependencies": {
-    "@vuepress/theme-default": "^1.0.3"
+    "@vuepress/theme-default": "^1.0.4"
   }
 }
