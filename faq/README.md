@@ -239,7 +239,7 @@ your question by featuring it on this page!
 [opendns-domain-tagging]: https://community.opendns.com/domaintagging/about/
 [weserv-github]: https://github.com/weserv/images/
 [weserv-issues]: https://github.com/weserv/images/issues
-[weserv-license]: https://github.com/weserv/images/blob/5.x/LICENSE.md
+[weserv-license]: https://github.com/weserv/images/blob/5.x/LICENSE
 [weserv-docker]: https://github.com/weserv/images/blob/5.x/DOCKER.md
 [weserv-privacy-policy]: https://github.com/weserv/images/blob/5.x/Privacy-Policy.md
 [cloudflare-network]: https://www.cloudflare.com/network/
