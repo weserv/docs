@@ -1,12 +1,12 @@
 <template>
   <div class="credits">
-    <span>Design inspired by <a href="https://getgrav.org/">Grav</a></span>
+    <span>Design inspired by <a href="https://getgrav.org/" target="_blank" rel="noopener noreferrer">Grav</a></span>
     <div>
-      <a href="https://github.com/weserv/images/blob/5.x/Privacy-Policy.md">Privacy Policy</a>
-      <a href="https://github.com/weserv/images/blob/5.x/CHANGELOG.md">Changelog</a>
+      <a href="https://github.com/weserv/images/blob/5.x/Privacy-Policy.md" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+      <a href="https://github.com/weserv/images/blob/5.x/CHANGELOG.md" target="_blank" rel="noopener noreferrer">Changelog</a>
     </div>
     <br>
-    <a href="https://images.weserv.nl/">Images.weserv.nl</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart-o pulse"></i> by <a href="https://github.com/weserv/images/graphs/contributors">our contributors</a>.
+    <router-link to="/">Images.weserv.nl</router-link> was <i class="fa fa-code"></i> with <i class="fa fa-heart-o pulse"></i> by <a href="https://github.com/weserv/images/graphs/contributors" target="_blank" rel="noopener noreferrer">our contributors</a>.
   </div>
 </template>
 

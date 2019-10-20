@@ -11,6 +11,10 @@ module.exports = {
   ],
   theme: '@weserv/docs-theme',
   themeConfig: {
+    algolia: {
+      indexName: 'images_weserv',
+      apiKey: '206416be8208020aafb1730fd2c7d813'
+    },
     logo: '/logo.svg',
     repo: 'weserv/images',
     repoLabel: 'Feedback? GitHub!',
@@ -19,10 +23,7 @@ module.exports = {
     editLinks: true,
     editLinkText: 'Edit this page on GitHub',
     sidebarDepth: 3,
-    algolia: {
-      indexName: 'images_weserv',
-      apiKey: '206416be8208020aafb1730fd2c7d813'
-    },
+    smoothScroll: true,
     nav: [
       {
         text: 'Home',

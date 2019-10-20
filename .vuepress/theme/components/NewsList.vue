@@ -1,6 +1,6 @@
 <template>
   <div class="news">
-    <h2 id="news"><a href="/news" aria-hidden="true" class="header-anchor">#</a> News</h2>
+    <h2 id="news"><a href="#news" aria-hidden="true" class="header-anchor">#</a> News</h2>
     <ul>
       <li class="item" v-for="(page, index) in $pagination.pages" :key="index">
         <span class="item-date">{{page.frontmatter.date | formatDate }}</span>

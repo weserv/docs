@@ -13,3 +13,4 @@ The theme has the following plugins enabled:
 - [@vuepress/plugin-nprogress](https://github.com/vuejs/vuepress/tree/master/packages/%40vuepress/plugin-nprogress)
 - [@vuepress/plugin-pwa](https://github.com/vuejs/vuepress/tree/master/packages/%40vuepress/plugin-pwa)
 - [@vuepress/plugin-search](https://github.com/vuejs/vuepress/tree/master/packages/%40vuepress/plugin-search)
+- [vuepress-plugin-smooth-scroll](https://github.com/vuepress/vuepress-community/tree/master/packages/vuepress-plugin-smooth-scroll)

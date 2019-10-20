@@ -7,10 +7,10 @@
         :alt="data.heroAlt || 'hero'"
       >
 
-      <h1 v-if="data.heroText" id="main-title">{{ data.heroText }}</h1>
+      <h1 v-if="data.heroText !== null" id="main-title">{{ data.heroText }}</h1>
 
-      <h2 v-if="data.tagline" class="description">{{ data.tagline }}</h2>
-      <h2 v-if="data.description" class="description">{{ data.description }}</h2>
+      <h2 v-if="data.tagline !== null" class="description">{{ data.tagline }}</h2>
+      <h2 v-if="data.description !== null" class="description">{{ data.description }}</h2>
 
       <p
         class="action"
