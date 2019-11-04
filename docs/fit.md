@@ -9,9 +9,9 @@ Default. Preserving aspect ratio, resize the image to be as large as possible wh
 are less than or equal to both those specified.
 
 ```html
-<img src="//images.weserv.nl/?url=ory.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=inside">
+<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=inside">
 ```
-![Inside](/?url=ory.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=inside)
+[![Inside](/static/lichtenstein.jpg?w=300&h=300&fit=inside)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=inside)
 
 ## Outside <Parameter text="&fit=outside"/><Badge text="New!" type="warn" vertical="middle"/>
 
@@ -19,27 +19,27 @@ Preserving aspect ratio, resize the image to be as small as possible while ensur
 greater than or equal to both those specified.
 
 ```html
-<img src="//images.weserv.nl/?url=ory.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=outside">
+<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=outside">
 ```
-![Outside](/?url=ory.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=outside)
+[![Outside](/static/lichtenstein.jpg?w=300&h=300&fit=outside)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=outside)
 
 ## Cover <Parameter text="&fit=cover"/>
 
 Crop the image to cover both provided dimensions.
 
 ```html
-<img src="//images.weserv.nl/?url=ory.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover">
+<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover">
 ```
-![Cover](/?url=ory.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover)
+[![Cover](/static/lichtenstein.jpg?w=300&h=300&fit=cover)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover)
 
 ## Fill <Parameter text="&fit=fill"/>
 
 Ignore the aspect ratio of the input and stretch to both provided dimensions.
 
 ```html
-<img src="//images.weserv.nl/?url=ory.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=fill">
+<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=fill">
 ```
-![Fill](/?url=ory.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=fill)
+[![Fill](/static/lichtenstein.jpg?w=300&h=300&fit=fill)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=fill)
 
 ## Contain <Parameter text="&fit=contain"/>
 
@@ -49,14 +49,14 @@ using `&cbg=`. See [here](adjustment.md#background) for the supported color form
 More info: [Issue #80 - letterbox images that need to fit](https://github.com/weserv/images/issues/80).
 
 ```html
-<img src="//images.weserv.nl/?url=ory.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=contain&cbg=black">
+<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=contain&cbg=black">
 ```
-![Contain](/?url=ory.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=contain&cbg=black)
+[![Contain](/static/lichtenstein.jpg?w=300&h=300&fit=contain&cbg=black)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=contain&cbg=black)
 
 ## Without enlargement <Parameter text="&we"/>
 
 Do not enlarge if the width or height are already less than the specified dimensions.
 
 ```html
-<img src="//images.weserv.nl/?url=ory.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=inside&we">
+<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=inside&we">
 ```

@@ -7,18 +7,18 @@ Change the orientation of your image, by either flipping along its axes or rotat
 Flip the image about the vertical Y axis. This always occurs after rotation, if any.
 
 ```html
-<img src="//images.weserv.nl/?url=ory.weserv.nl/lichtenstein.jpg&h=300&flip">
+<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300&flip">
 ```
-![Flip](/?url=ory.weserv.nl/lichtenstein.jpg&h=300&flip)
+[![Flip](/static/lichtenstein.jpg?h=300&flip)](/?url=images.weserv.nl/lichtenstein.jpg&h=300&flip)
 
 ## Flop <Parameter text="&flop"/><Badge text="New!" type="warn" vertical="middle"/>
 
 Flop the image about the horizontal X axis. This always occurs after rotation, if any.
 
 ```html
-<img src="//images.weserv.nl/?url=ory.weserv.nl/lichtenstein.jpg&h=300&flop">
+<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300&flop">
 ```
-![Flop](/?url=ory.weserv.nl/lichtenstein.jpg&h=300&flop)
+[![Flop](/static/lichtenstein.jpg?h=300&flop)](/?url=images.weserv.nl/lichtenstein.jpg&h=300&flop)
 
 ## Rotation <Parameter text="&ro="/>
 
@@ -31,6 +31,6 @@ color can be provided with the `&rbg=` parameter. See [here](adjustment.md#backg
 If no angle is provided, it is determined from the EXIF data.
 
 ```html
-<img src="//images.weserv.nl/?url=ory.weserv.nl/lichtenstein.jpg&h=300&ro=45&rbg=red">
+<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300&ro=45&rbg=red">
 ```
-![Rotation](/?url=ory.weserv.nl/lichtenstein.jpg&h=300&ro=45&rbg=red)
+[![Rotation](/static/lichtenstein.jpg?h=300&ro=45&rbg=red)](/?url=images.weserv.nl/lichtenstein.jpg&h=300&ro=45&rbg=red)

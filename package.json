@@ -28,7 +28,7 @@
     "@vuepress/plugin-back-to-top": "^1.2.0",
     "@vuepress/plugin-blog": "^1.5.1",
     "@vuepress/plugin-pwa": "^1.2.0",
-    "eslint": "^6.5.1",
+    "eslint": "^6.6.0",
     "eslint-plugin-vue": "^5.2.3",
     "file-loader": "^4.2.0",
     "line-awesome": "github:icons8/line-awesome",

@@ -21,24 +21,24 @@ More info: [Issue #49 - Add circle effect to photos](https://github.com/weserv/i
 - `heart`
 
 ```html
-<img src="//images.weserv.nl/?url=ory.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover&mask=circle">
+<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover&mask=circle">
 ```
-![Mask type](/?url=ory.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover&mask=circle)
+[![Mask type](/static/lichtenstein.jpg?w=300&h=300&fit=cover&mask=circle)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover&mask=circle)
 
 ## Mask trim <Parameter text="&mtrim"/>
 
 Removes the remaining whitespace from the mask.
 
 ```html
-<img src="//images.weserv.nl/?url=ory.weserv.nl/lichtenstein.jpg&w=300&h=900&fit=cover&a=crop-22-0&mask=circle&mtrim">
+<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=900&fit=cover&a=crop-22-0&mask=circle&mtrim">
 ```
-![Mask trim](/?url=ory.weserv.nl/lichtenstein.jpg&w=300&h=900&fit=cover&a=crop-22-0&mask=circle&mtrim)
+[![Mask trim](/static/lichtenstein.jpg?w=300&h=900&fit=cover&a=crop-22-0&mask=circle&mtrim)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=900&fit=cover&a=crop-22-0&mask=circle&mtrim)
 
 ## Mask background <Parameter text="&mbg="/>
 
 Sets the background color of the mask. See [here](adjustment.md#background) for the supported color formats.
 
 ```html
-<img src="//images.weserv.nl/?url=ory.weserv.nl/transparency_demo.png&w=400&bg=black&mask=heart&mbg=red">
+<img src="//images.weserv.nl/?url=images.weserv.nl/transparency_demo.png&w=400&bg=black&mask=heart&mbg=red">
 ```
-![Mask background](/?url=ory.weserv.nl/transparency_demo.png&w=400&bg=black&mask=heart&mbg=red)
+[![Mask background](/static/transparency_demo.png?w=400&bg=black&mask=heart&mbg=red)](/?url=images.weserv.nl/transparency_demo.png&w=400&bg=black&mask=heart&mbg=red)

@@ -18,6 +18,6 @@ You pass the image URL and a set of parameters. images.weserv.nl will then fetch
 cache it and display it. The next time the request comes, it will serve the cached version.
 
 ```html
-<!-- ory.weserv.nl/lichtenstein.jpg -->
-<img src="//images.weserv.nl/?url=ory.weserv.nl/lichtenstein.jpg&w=300&h=300">
+<!-- images.weserv.nl/lichtenstein.jpg -->
+<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300">
 ```

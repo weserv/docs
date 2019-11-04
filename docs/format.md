@@ -9,12 +9,12 @@ Use adaptive row filtering for reducing the PNG file size. This only works when 
 ## Base64 (data URL) <Parameter text="&encoding=base64" vertical="middle"/>
 
 Encodes the image to be used directly in the src= of the `<img>`-tag.
-Use [this link](/?url=ory.weserv.nl/lichtenstein.jpg&crop=100,100,720,530&encoding=base64) to see the output result.
+Use [this link](/?url=images.weserv.nl/lichtenstein.jpg&crop=100,100,720,530&encoding=base64) to see the output result.
 
 More info: [Issue #59 - Return image base64 encoded](https://github.com/weserv/images/issues/59).
 
 ```
-//images.weserv.nl/?url=ory.weserv.nl/lichtenstein.jpg&crop=100,100,720,530&encoding=base64
+//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&crop=100,100,720,530&encoding=base64
 ```
 
 ## Cache-Control <Parameter text="&maxage=" vertical="middle"/><Badge text="New!" type="warn" vertical="middle"/>
@@ -38,7 +38,7 @@ A value without a suffix means seconds. It is recommended to always specify a su
 More info: [Issue #186 - Increase Cache-Control: max-age= to 1 year instead of 1 month](https://github.com/weserv/images/issues/186).
 
 ```
-//images.weserv.nl?url=ory.weserv.nl/lichtenstein.jpg&w=100&maxage=31d
+//images.weserv.nl?url=images.weserv.nl/lichtenstein.jpg&w=100&maxage=31d
 ```
 
 ## Compression level <Parameter text="&l="/><Badge text="New!" type="warn" vertical="middle"/>
@@ -56,9 +56,9 @@ More info: [Issue #37 - Return default image if the image's URL not found](https
 The URL must not include a `default` querystring (if it does, it will be ignored).
 
 ```html
-<img src="//images.weserv.nl/?url=example.org/noimage.jpg&default=ssl:images.weserv.nl%2F%3Furl%3Dory.weserv.nl/lichtenstein.jpg%26w%3D300">
+<img src="//images.weserv.nl/?url=example.org/noimage.jpg&default=ssl:images.weserv.nl%2F%3Furl%3Dimages.weserv.nl/lichtenstein.jpg%26w%3D300">
 ```
-![Default image](/?url=example.org/noimage.jpg&default=ssl:images.weserv.nl%2F%3Furl%3Dory.weserv.nl/lichtenstein.jpg%26w%3D300)
+[![Default image](/static/lichtenstein.jpg?w=300)](/?url=example.org/noimage.jpg&default=ssl:images.weserv.nl%2F%3Furl%3Dimages.weserv.nl/lichtenstein.jpg%26w%3D300)
 
 ## Filename <Parameter text="&filename="/>
 
@@ -74,9 +74,9 @@ Adds interlacing to GIF and PNG. JPEG's become progressive.
 More info: [Issue #50 - Add parameter to use progressive JPEGs](https://github.com/weserv/images/issues/50).
 
 ```html
-<img src="//images.weserv.nl/?url=ory.weserv.nl/lichtenstein.jpg&w=300&il">
+<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&il">
 ```
-![Interlace / progressive](/?url=ory.weserv.nl/lichtenstein.jpg&w=300&il)
+[![Interlace / progressive](/static/lichtenstein.jpg?w=300&il)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&il)
 
 ## Number of pages <Parameter text="&n="/><Badge text="New!" type="warn" vertical="middle"/>
 
@@ -88,9 +88,9 @@ of the document".
 :::
 
 ```html
-<img src="//images.weserv.nl/?url=ory.weserv.nl/banana.webp&h=300&output=gif&n=-1">
+<img src="//images.weserv.nl/?url=images.weserv.nl/banana.webp&h=300&output=gif&n=-1">
 ```
-![Number of pages](/?url=ory.weserv.nl/banana.webp&h=300&output=gif&n=-1)
+[![Number of pages](/static/banana.webp?h=300&output=gif&n=-1)](/?url=images.weserv.nl/banana.webp&h=300&output=gif&n=-1)
 
 ## Output <Parameter text="&output=" vertical="middle"/>
 
@@ -100,9 +100,9 @@ given, it will honor the origin image format.
 More info: [Issue #62 - Format conversion](https://github.com/weserv/images/issues/62).
 
 ```html
-<img src="//images.weserv.nl/?url=ory.weserv.nl/lichtenstein.jpg&w=300&output=webp">
+<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&output=webp">
 ```
-![Output](/?url=ory.weserv.nl/lichtenstein.jpg&w=300&output=webp)
+[![Output](/static/lichtenstein.jpg?w=300&output=webp)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&output=webp)
 
 ## Page <Parameter text="&page="/>
 
@@ -115,6 +115,6 @@ Defines the quality of the image. Use values between `0` and `100`. Defaults to 
 when the output image is `jpg`, `tiff` or `webp`.
 
 ```html
-<img src="//images.weserv.nl/?url=ory.weserv.nl/lichtenstein.jpg&w=300&q=20">
+<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&q=20">
 ```
-![Quality](/?url=ory.weserv.nl/lichtenstein.jpg&w=300&q=20)
+[![Quality](/static/lichtenstein.jpg?w=300&q=20)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&q=20)

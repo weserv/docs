@@ -17,9 +17,9 @@ it also accepts hexadecimal RGB and RBG alpha formats.
 More info: [Issue #81 - Background setting](https://github.com/weserv/images/issues/81).
 
 ```html
-<img src="//images.weserv.nl/?url=ory.weserv.nl/transparency_demo.png&w=400&bg=black">
+<img src="//images.weserv.nl/?url=images.weserv.nl/transparency_demo.png&w=400&bg=black">
 ```
-![Background](/?url=ory.weserv.nl/transparency_demo.png&w=400&bg=black)
+[![Background](/static/transparency_demo.png?w=400&bg=black)](/?url=images.weserv.nl/transparency_demo.png&w=400&bg=black)
 
 ## Blur <Parameter text="&blur="/>
 
@@ -28,27 +28,27 @@ Adds a blur effect to the image. Use values between `0` and `100`.
 More info: [Issue #69 - Allow blur transformation (with radius parameter)](https://github.com/weserv/images/issues/69).
 
 ```html
-<img src="//images.weserv.nl/?url=ory.weserv.nl/lichtenstein.jpg&w=300&blur=5">
+<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&blur=5">
 ```
-![Blur](/?url=ory.weserv.nl/lichtenstein.jpg&w=300&blur=5)
+[![Blur](/static/lichtenstein.jpg?w=300&blur=5)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&blur=5)
 
 ## Brightness <Parameter text="&bri="/>
 
 Adjusts the image brightness. Use values between `-100` and `+100`, where `0` represents no change.
 
 ```html
-<img src="//images.weserv.nl/?url=ory.weserv.nl/lichtenstein.jpg&w=300&bri=-25">
+<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&bri=-25">
 ```
-![Brightness](/?url=ory.weserv.nl/lichtenstein.jpg&w=300&bri=-25)
+[![Brightness](/static/lichtenstein.jpg?w=300&bri=-25)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&bri=-25)
 
 ## Contrast <Parameter text="&con="/>
 
 Adjusts the image contrast. Use values between `-100` and `+100`, where `0` represents no change.
 
 ```html
-<img src="//images.weserv.nl/?url=ory.weserv.nl/lichtenstein.jpg&w=300&con=25">
+<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&con=25">
 ```
-![Contrast](/?url=ory.weserv.nl/lichtenstein.jpg&w=300&con=25)
+[![Contrast](/static/lichtenstein.jpg?w=300&con=25)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&con=25)
 
 ## Filter <Parameter text="&filt="/>
 
@@ -61,9 +61,9 @@ You can use `&start` and `&stop` to define the duotone colors. By default it wil
 :::
 
 ```html
-<img src="//images.weserv.nl/?url=ory.weserv.nl/zebra.jpg&w=300&h=300&fit=cover&a=focal-82-0&filt=duotone">
+<img src="//images.weserv.nl/?url=images.weserv.nl/zebra.jpg&w=300&h=300&fit=cover&a=focal-82-0&filt=duotone">
 ```
-![Filter](/?url=ory.weserv.nl/zebra.jpg&w=300&h=300&fit=cover&a=focal-82-0&filt=duotone)
+[![Filter](/static/zebra.jpg?w=300&h=300&fit=cover&a=focal-82-0&filt=duotone)](/?url=images.weserv.nl/zebra.jpg&w=300&h=300&fit=cover&a=focal-82-0&filt=duotone)
 
 ## Gamma <Parameter text="&gam="/>
 
@@ -71,9 +71,9 @@ Adjusts the image gamma. Use values between `1` and `3`. The default value is `2
 approximation for sRGB images.
 
 ```html
-<img src="//images.weserv.nl/?url=ory.weserv.nl/lichtenstein.jpg&w=300&gam=3">
+<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&gam=3">
 ```
-![Gamma](/?url=ory.weserv.nl/lichtenstein.jpg&w=300&gam=3)
+[![Gamma](/static/lichtenstein.jpg?w=300&gam=3)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&gam=3)
 
 ## Sharpen <Parameter text="&sharp="/>
 
@@ -81,9 +81,9 @@ Sharpen the image. Performs a accurate sharpen of the L channel in the LAB color
 `&sharpf=` and `&sharpj=` to control the level of sharpening in "flat" and "jagged" areas.
 
 ```html
-<img src="//images.weserv.nl/?url=ory.weserv.nl/lichtenstein.jpg&w=300&sharp=3">
+<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&sharp=3">
 ```
-![Sharpen](/?url=ory.weserv.nl/lichtenstein.jpg&w=300&sharp=3)
+[![Sharpen](/static/lichtenstein.jpg?w=300&sharp=3)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&sharp=3)
 
 ## Tint <Parameter text="&tint="/><Badge text="New!" type="warn" vertical="middle"/>
 
@@ -91,6 +91,6 @@ Tint the image using the provided chroma while preserving the image luminance. S
 for the supported color formats.
 
 ```html
-<img src="//images.weserv.nl/?url=ory.weserv.nl/lichtenstein.jpg&w=300&tint=red">
+<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&tint=red">
 ```
-![Tint](/?url=ory.weserv.nl/lichtenstein.jpg&w=300&tint=red)
+[![Tint](/static/lichtenstein.jpg?w=300&tint=red)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&tint=red)

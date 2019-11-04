@@ -64,9 +64,9 @@ The source code of the rate limiter can be viewed on GitHub: [weserv/rate-limit-
 Thanks to [libvips 8.8][libvips-8.8], we've now enabled support for [animated WebP and GIF images][n-pages].
 
 ```html
-<img src="//images.weserv.nl/?url=ory.weserv.nl/banana.webp&h=300&output=gif&n=-1">
+<img src="//images.weserv.nl/?url=images.weserv.nl/banana.webp&h=300&output=gif&n=-1">
 ```
-![Animated image](/?url=ory.weserv.nl/banana.webp&h=300&output=gif&n=-1)
+[![Animated image](/static/banana.webp?h=300&output=gif&n=-1)](/?url=images.weserv.nl/banana.webp&h=300&output=gif&n=-1)
 
 ## Support for loading HEIC images
 We've added support for loading HEIC-images. This is the new image compression standard being used by
@@ -101,9 +101,9 @@ We introduced a new parameter named [`&tint`][tint] to tint an image using the p
 while preserving the image luminance.
 
 ```html
-<img src="//images.weserv.nl/?url=ory.weserv.nl/lichtenstein.jpg&w=300&tint=red">
+<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&tint=red">
 ```
-![Tint](/?url=ory.weserv.nl/lichtenstein.jpg&w=300&tint=red)
+[![Tint](/static/lichtenstein.jpg?w=300&tint=red)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&tint=red)
 
 ## Arbitrary rotation angles
 Instead of only being able to rotate multiples of 90 degrees, any angle can now be given. The remaining
@@ -111,9 +111,9 @@ space can be filled with a background color by using `&rbg=`. To reflect this ch
 parameter has been renamed to [`&ro=`][rotation].
 
 ```html
-<img src="//images.weserv.nl/?url=ory.weserv.nl/lichtenstein.jpg&h=300&ro=45">
+<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300&ro=45">
 ```
-![Rotation](/?url=ory.weserv.nl/lichtenstein.jpg&h=300&ro=45)
+[![Rotation](/static/lichtenstein.jpg?h=300&ro=45)](/?url=images.weserv.nl/lichtenstein.jpg&h=300&ro=45)
 
 ## Adaptive filter and compression level
 To minimize the size of PNG images and thus reduce their load time we've introduced some new
@@ -121,7 +121,7 @@ parameters named [`&af`][adaptive-filter] and [`&l`][compression-level].
 
 ## Metadata output
 To quickly view the metadata of an image, we've added support for [`&output=json`][output].
-See [here](/?url=ory.weserv.nl/zebra.jpg&output=json) for an example.
+See [here](/?url=images.weserv.nl/zebra.jpg&output=json) for an example.
 
 ## Flip / flop an image
 We've added support for flipping an image [horizontally][flop] or [vertically][flip]. You can combine these parameters
