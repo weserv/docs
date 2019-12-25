@@ -74,7 +74,7 @@ Wonderful, thanks for asking! Seriously, they provide awesome service, and are a
 
 ## What is your relationship with Cloudflare?
 We've started this service in 2007, use [Cloudflare](https://www.cloudflare.com/) since early 2012, and are on the free-tier since 2015.
-Costs for the servers to support images.weserv.nl are really low, and it serves as a great testbed for new 
+Costs for the servers to support images.weserv.nl are really low, and it serves as a great testbed for new
 technologies. Cloudflare is based on the same [principles to provide their services][cloudflare-cdn].
 
 ## Is there any SLA or uptime guarantee for your service?
@@ -103,7 +103,7 @@ We are not interested in the images you ask us to process.
 
 The only exception is if there is a technical oddity in an image which causes strange behavior on our
 server(s). If you ask us to process such an image, we may try to copy the technical bits that causes the
-strange behavior. But we will never show others any (real) part of your image. 
+strange behavior. But we will never show others any (real) part of your image.
 
 Your images are private, and will not be shared, unless you tell us so. Other people can always use the
 same link (web address / URL) as you use, but we will not share any web addresses or logs.
@@ -133,7 +133,7 @@ Our servers only initiate a refresh when all caches have expired, and only when 
 requested by end users.
 
 The rules we use for server-side caching are different from the ones you see in the headers we provide
-for browsers. 
+for browsers.
 
 ## How are images cached by my browser?
 We ask the browser to cache images for 31536000 seconds, or 1 year. But it is up to the browser to do
@@ -165,12 +165,12 @@ supporting all [libMagick image file types][magick-formats].
 
 ## Do you support animated images? E.g. animated .gif?
 We support animated WebP and GIF images through the use of [`&n=-1`][n-pages]. By default the first frame of
-each image is processed. We don't support APNG, since the official libpng reference implementation 
+each image is processed. We don't support APNG, since the official libpng reference implementation
 doesn't support this extension.
 
 ## Can I use my own (sub)domain? E.g. by using a CNAME to images.weserv.nl?
 We offer this service only on the images.weserv.nl domain, and we offer it as-is. However, if you want to
-use it under your own (sub)domain, please see check our [GitHub][weserv-github] to use it on your own server(s).
+use it under your own (sub)domain, please see our [GitHub][weserv-github] to use it on your own server(s).
 
 ## Why don't you support CNAME-ing?
 The goal of this service is reaching out to starting websites that don't have the skills nor resources to
@@ -224,7 +224,7 @@ If you want more information about the headers we serve, consider using [REDbot.
 every header we serve, and why this is used. We also serve Cache-Control: public, this allows browsers to
 cache things even when accessing images.weserv.nl over https://.
 
-Let us know if you need more info. We are open for comments about the caching policies we use. We do 
+Let us know if you need more info. We are open for comments about the caching policies we use. We do
 run complete tests on server load, bandwidth, and CPU-cycles, for each header we place. Enabling 304
 will generate 5 times more requests from browsers in our case, this could be different for your site, but I
 expect it to be the same.

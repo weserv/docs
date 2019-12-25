@@ -1,0 +1,5 @@
+# If you would like to report a security issue
+# you may report it privately by email.
+Contact: admin@weserv.nl
+Preferred-Languages: en, nl
+Canonical: https://images.weserv.nl/security.txt

@@ -6,7 +6,7 @@
       <a href="https://github.com/weserv/images/blob/5.x/CHANGELOG.md" target="_blank" rel="noopener noreferrer">Changelog</a>
     </div>
     <br>
-    <router-link to="/">Images.weserv.nl</router-link> was <i class="fa fa-code"></i> with <i class="fa fa-heart-o pulse"></i> by <a href="https://github.com/weserv/images/graphs/contributors" target="_blank" rel="noopener noreferrer">our contributors</a>.
+    <router-link to="/">Images.weserv.nl</router-link> was <i class="las la-code"></i> with <i class="las la-heart pulse"></i> by <a href="https://github.com/weserv/images/graphs/contributors" target="_blank" rel="noopener noreferrer">our contributors</a>.
   </div>
 </template>
 

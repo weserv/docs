@@ -1,0 +1,49 @@
+#############################################
+#############################################
+####                                     ####
+####                              ####   ####
+####                             ######  ####
+####                             ######  ####
+####          #                   ####   ####
+####        #####                        ####
+####      #########            ##        ####
+####    #############        ######      ####
+####  #######   #######    ##########    ####
+###########       #####################  ####
+#########           ##########    ###########
+#######               #######       #########
+#####                   #######       #######
+####                      #######       #####
+#############################################
+#############################################
+
+/* ABOUT THIS FILE */
+  Description: We Are People, Not Machines
+  More information: http://humanstxt.org/
+
+/* TEAM */
+  Administrator: Andries Louw Wolthuizen
+  Contact: admin [at] weserv.nl
+  From: Sneek, Friesland, Netherlands
+
+  Developer: Kleis Auke Wolthuizen
+  Contact: info [at] kleisauke.nl
+  From: Sneek, Friesland, Netherlands
+
+/* THANKS */
+  Contributors:
+  https://github.com/weserv/images/contributors
+
+/* SITE */
+  Language: English
+  Coded with: C / C++
+  Software: nginx, libvips, Redis
+  Services: Cloudflare, OpenDNS
+
+/* SECURITY */
+  Information:
+  https://images.weserv.nl/security.txt
+
+/* BUGS */
+  Found a bug? Open a new issue on GitHub:
+  https://github.com/weserv/images/issues
