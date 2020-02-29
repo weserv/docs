@@ -14,7 +14,7 @@
         </p>
       </li>
     </ul>
-    <div class="page-nav" v-if="$pagination.hasPrev || $pagination.hasNext">
+    <div class="page-nav" v-if="$pagination.length > 1">
       <p class="inner">
         <span
           v-if="$pagination.hasPrev"
@@ -51,7 +51,11 @@
 export default {
   computed: {
     $pagination() {
-      return this.$getPagination('news')
+      // Fallback to news
+      const pid = this.$route.meta.pid || 'news';
+      const id = this.$route.meta.id || 'news';
+
+      return this.$getPagination(pid, id);
     },
   },
   filters: {
