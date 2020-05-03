@@ -1,11 +1,11 @@
 ---
 home: true
 metaTitle: Image cache & resize service
+description: Manipulate images on-the-fly with a worldwide cache
 heroText: Images.weserv.nl
 heroAlt: Images.weserv.nl
 heroImage: /logo.svg
-tagline: An image cache & resize service.
-description: Manipulate images on-the-fly with a worldwide cache.
+tagline: An image cache &amp; resize service.<br/>Manipulate images on-the-fly with a worldwide cache.
 actionText: Read the documentation →
 actionLink: /docs/
 ---

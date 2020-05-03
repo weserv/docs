@@ -7,10 +7,9 @@
         :alt="data.heroAlt || 'hero'"
       >
 
-      <h1 v-if="data.heroText !== null" id="main-title">{{ data.heroText }}</h1>
+      <h1 v-if="data.heroText !== null" id="main-title" v-html="data.heroText"></h1>
 
-      <h2 v-if="data.tagline !== null" class="description">{{ data.tagline }}</h2>
-      <h2 v-if="data.description !== null" class="description">{{ data.description }}</h2>
+      <h2 v-if="data.tagline !== null" class="description" v-html="data.tagline"></h2>
 
       <p
         class="action"
@@ -58,6 +57,7 @@ export default {
         margin 0
         color $textColor
         max-width none
+        line-height: 1.5
 
     .features
       &.small

@@ -63,11 +63,11 @@ that processes your request. We don't share these logs, or store them in any oth
 information on how we collect, store and use any data, can be found in our [privacy policy][weserv-privacy-policy].
 
 ## Where are your servers located?
-Our servers are located near Paris (France) and Falkenstein (Germany). We also use Cloudflare, [Cloudflare has servers
-more close to your location][cloudflare-network], and they are fast.
+Our servers are located near Paris (France) and Falkenstein (Germany). We also use Cloudflare, [Cloudflare
+has servers more close to your location][cloudflare-network], and they are fast.
 
-For now, our servers are with [OVH][ovh], [Scaleway][scaleway] and [Hetzner][hetzner] this may change in the future. We've always used
-servers located within the European Union, and continue to do so.
+For now, our servers are with [OVH][ovh], [Scaleway][scaleway] and [Hetzner][hetzner] this may change in the future. We've
+always used servers located within the European Union, and continue to do so.
 
 ## How is your relationship with Cloudflare?
 Wonderful, thanks for asking! Seriously, they provide awesome service, and are amazing to work with.

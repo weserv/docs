@@ -1,7 +1,7 @@
 module.exports = {
   dest: 'dist',
   title: 'Images.weserv.nl',
-  description: 'Image cache & resize service',
+  description: 'Image cache &amp; resize service',
   head: [
     ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' }],
     ['link', { rel: 'manifest', href: '/site.webmanifest' }],
