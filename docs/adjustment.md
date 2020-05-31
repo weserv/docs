@@ -32,15 +32,6 @@ More info: [Issue #69 - Allow blur transformation (with radius parameter)](https
 ```
 [![Blur](/static/lichtenstein.jpg?w=300&blur=5)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&blur=5)
 
-## Brightness <Parameter text="&bri="/>
-
-Adjusts the image brightness. Use values between `-100` and `+100`, where `0` represents no change.
-
-```html
-<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&bri=-25">
-```
-[![Brightness](/static/lichtenstein.jpg?w=300&bri=-25)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&bri=-25)
-
 ## Contrast <Parameter text="&con="/>
 
 Adjusts the image contrast. Use values between `-100` and `+100`, where `0` represents no change.
@@ -55,7 +46,7 @@ Adjusts the image contrast. Use values between `-100` and `+100`, where `0` repr
 Applies a filter effect to the image. Accepts `greyscale`, `sepia`, `duotone` or `negate`.
 
 ::: tip
-You can use `&start` and `&stop` to define the duotone colors. By default it will use
+You can use `&start` and `&stop` to define the duotone colors. By default, it will use
 <code>&start=<span style="background:#C83658;color:white;">C83658</span></code> and
 <code>&stop=<span style="background:#D8E74F;color:black;">D8E74F</span></code>.
 :::
@@ -75,9 +66,47 @@ approximation for sRGB images.
 ```
 [![Gamma](/static/lichtenstein.jpg?w=300&gam=3)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&gam=3)
 
+## Modulate <Parameter text="&mod="/><Badge text="New!" type="warn" vertical="middle"/>
+
+Transforms the image using brightness, saturation and hue rotation. Use `&mod=[brightness multiplier],
+[saturation multiplier],[hue degrees]` to define the below adjustments at once.
+
+### Brightness <Parameter text="&mod="/>
+
+Adjusts the brightness of the image. A multiplier greater than 1 will increase brightness, while a
+multiplier less than 1 will decrease the brightness.
+
+```html
+<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&mod=2">
+```
+[![Brightness](/static/lichtenstein.jpg?w=300&mod=2)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&mod=2)
+
+### Saturation <Parameter text="&sat="/>
+
+Adjusts the saturation of the image. A multiplier greater than 1 will increase saturation, while a multiplier
+less than 1 will decrease the saturation.
+
+```html
+<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&sat=0.5">
+```
+[![Saturation](/static/lichtenstein.jpg?w=300&sat=0.5)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&sat=0.5)
+
+### Hue rotation <Parameter text="&hue="/>
+
+Applies a hue rotation to the image. A positive hue rotation increases the hue value, while a negative
+rotation decreases the hue value.
+
+Values are given in degrees, there is no minimum or maximum value; `&hue=N` evaluates to `N` modulo
+360.
+
+```html
+<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&hue=90">
+```
+[![Hue rotation](/static/lichtenstein.jpg?w=300&hue=90)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&hue=90)
+
 ## Sharpen <Parameter text="&sharp="/>
 
-Sharpen the image. Performs a accurate sharpen of the L channel in the LAB color space. Use in combination with
+Sharpen the image. Performs an accurate sharpen of the L channel in the LAB color space. Use in combination with
 `&sharpf=` and `&sharpj=` to control the level of sharpening in "flat" and "jagged" areas.
 
 ```html

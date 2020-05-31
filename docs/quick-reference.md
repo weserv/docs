@@ -21,10 +21,12 @@
 | Rotation background     | `rbg`           | Sets the background color when rotating by arbitrary angles.            | [info][rotation-bg]           |
 | Background              | `bg`            | Sets the background color of the image.                                 | [info][background]            |
 | Blur                    | `blur`          | Adds a blur effect to the image.                                        | [info][blur]                  |
-| Brightness              | `bri`           | Adjusts the image brightness.                                           | [info][brightness]            |
 | Contrast                | `con`           | Adjusts the image contrast.                                             | [info][contrast]              |
 | Filter                  | `filt`          | Applies a filter effect to the image.                                   | [info][filter]                |
 | Gamma                   | `gam`           | Adjusts the image gamma.                                                | [info][gamma]                 |
+| Modulate                | `mod`           | Transforms the image using brightness, saturation and hue rotation.     | [info][modulate]              |
+| Saturation              | `sat`           | Adjusts the saturation of the image.                                    | [info][saturation]            |
+| Hue rotation            | `hue`           | Applies a hue rotation to the image.                                    | [info][hue-rotation]          |
 | Sharpen                 | `sharp`         | Sharpen the image.                                                      | [info][sharpen]               |
 | Tint                    | `tint`          | Tint the image.                                                         | [info][tint]                  |
 | Adaptive filter         | `af`            | A filter algorithm that can be applied before compression.              | [info][adaptive-filter]       |
@@ -57,10 +59,12 @@
 [rotation-bg]: orientation.md#rotation
 [background]: adjustment.md#background
 [blur]: adjustment.md#blur
-[brightness]: adjustment.md#brightness
 [contrast]: adjustment.md#contrast
 [filter]: adjustment.md#filter
 [gamma]: adjustment.md#gamma
+[modulate]: adjustment.md#modulate
+[saturation]: adjustment.md#saturation
+[hue-rotation]: adjustment.md#hue-rotation
 [sharpen]: adjustment.md#sharpen
 [tint]: adjustment.md#tint
 [adaptive-filter]: format.md#adaptive-filter

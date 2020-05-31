@@ -8,6 +8,7 @@ How the image should be aligned when `&fit=cover` or `&fit=contain` is set. The 
 parameters should also be specified.
 
 ### Position-based
+
 Controls the starting location of the crop. When `&fit=contain` is set, it determines how the image is positioned inside its box.
 
 **Valid positions:**
@@ -29,6 +30,7 @@ For more information, please see the suggestion on our GitHub issue tracker: [Is
 [![Alignment position](/static/lichtenstein.jpg?w=300&h=300&fit=cover&a=top)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover&a=top)
 
 ### Focal point
+
 You can be more specific about the alignment using a focal point. This is defined using two offset
 percentages: `focal-x%-y%`.
 
@@ -38,7 +40,8 @@ percentages: `focal-x%-y%`.
 [![Focal point](/static/lichtenstein.jpg?w=300&h=300&fit=cover&a=focal-0-20)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover&a=focal-0-20)
 
 ### Smart crop
-A experimental strategy-based approach to crop the image by removing boring parts. This only works
+
+An experimental strategy-based approach to crop the image by removing boring parts. This only works
 with `&fit=cover`.
 
 More info: [Issue #90 - Add support for smart crop](https://github.com/weserv/images/issues/90).

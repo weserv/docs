@@ -48,7 +48,7 @@ value is `6`. This only works when the output image is `png`.
 
 ## Default image <Parameter text="&default="/>
 
-If there is a problem loading an image, then a error is shown. However, there might be a need where
+If there is a problem loading an image, then an error is shown. However, there might be a need where
 instead of giving a broken image to the user, you want a default image to be delivered.
 
 More info: [Issue #37 - Return default image if the image's URL not found](https://github.com/weserv/images/issues/37).
@@ -69,7 +69,7 @@ More info: [Issue #122 - Specify filename](https://github.com/weserv/images/issu
 
 ## Interlace / progressive <Parameter text="&il" vertical="middle"/>
 
-Adds interlacing to GIF and PNG. JPEG's become progressive.
+Adds interlacing to GIF and PNG. JPEGs become progressive.
 
 More info: [Issue #50 - Add parameter to use progressive JPEGs](https://github.com/weserv/images/issues/50).
 
@@ -80,11 +80,11 @@ More info: [Issue #50 - Add parameter to use progressive JPEGs](https://github.c
 
 ## Number of pages <Parameter text="&n="/><Badge text="New!" type="warn" vertical="middle"/>
 
-To select the the number of pages to render. The default value is `1`. Set to `-1` to mean "until the end
-of the document".
+To select the number of pages to render. The default value is `1`. Set to `-1` to mean "until the end of
+the document".
 
 ::: tip
-`-1` will be useful if you need to resize a animated WebP or GIF image.
+`-1` will be useful if you need to resize an animated WebP or GIF image.
 :::
 
 ```html

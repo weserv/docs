@@ -5,7 +5,7 @@ sidebar: auto
 # FAQ
 
 ## What is images.weserv.nl?
-Images.weserv.nl is an image service that is free for use to anyone, and we offer it as-is, it's just basic
+Images.weserv.nl is an image service which is free for use to anyone, and we offer it as-is, it's just basic
 image resizing, available to anyone, easy to use. We try to keep everyone as happy as we can.
 
 ## What is this page? Where do I find my question?
@@ -153,7 +153,7 @@ opportunistic MITM attacks.
 
 ## Are images compressed in any way?
 GZip compression is disabled, because it increases file sizes for JPEG-images, and it increases CPU-load
-on client and server.
+on the client and server.
 
 JPEG-compression is honored, and is by default used when requesting BMP-images (they are converted
 to JPEG). If you want to modify compression for JPEG-images, you can do so by setting the [`&q=`][quality]
@@ -164,7 +164,7 @@ We "officially" support JPEG, PNG, GIF, TIFF, WebP, PDF and SVG as image input. 
 supporting all [libMagick image file types][magick-formats].
 
 ## Do you support animated images? E.g. animated .gif?
-We support animated WebP and GIF images through the use of [`&n=-1`][n-pages]. By default the first frame of
+We support animated WebP and GIF images through the use of [`&n=-1`][n-pages]. By default, the first frame of
 each image is processed. We don't support APNG, since the official libpng reference implementation
 doesn't support this extension.
 
@@ -183,7 +183,7 @@ better with their site(s), and will offer many advantages we just can't.
 This is because we don't use Last-Modified headers.
 
 ## Why don't you use ETag or Last-Modified headers?
-We disable 2 (default) settings regarding to cache-control. These are the ETag header, and the Last-
+We disable 2 (default) settings regarding cache-control. These are the ETag header, and the Last-
 Modified header.
 
 We do set the Cache-Control header. Allow me to explain this decision, using Apache-config.
@@ -215,7 +215,7 @@ The Yahoo Developer Network recommends turning off ETags because of this misbeha
 [Best practices for speeding up your web site - Disable ETags][disable-etags].
 
 Disabling Last-Modified will stop browsers from asking 304 Content Not Modified requests. In my
-experience this is positive, because the webserver has less requests to process, and browsers rely more
+experience this is positive, because the webserver has fewer requests to process, and browsers rely more
 on the Cache-Control settings you serve. But it may or may not suit you. Some browsers will try to
 validate assets every few minutes if you serve them a "Last-Modified" header, and that's why I would
 advise to disable the use of it completely.

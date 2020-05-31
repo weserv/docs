@@ -20,7 +20,7 @@ work on API 5. The source code is available on the [5.x branch][5.x-branch], thi
 the future.
 
 ## LuaJIT → C++
-With API version 5 we've rewrote the entire codebase to C++ as a nginx module. The reason for this
+With API version 5 we've rewritten the entire codebase to C++ as a nginx module. The reason for this
 rewrite is to tighten the control over memory allocation. We found out that the current garbage collector
 (GC) in LuaJIT 2, which is essentially the same as the one in vanilla Lua 5.1, is not very fast for large
 workloads. [A new GC is already proposed][luajit-new-gc] for LuaJIT 3.0, but it has not yet been implemented.
