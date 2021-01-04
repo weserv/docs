@@ -1,5 +1,8 @@
 <template>
-  <main class="home" aria-labelledby="main-title">
+  <main
+    class="home"
+    :aria-labelledby="data.heroText !== null ? 'main-title' : null"
+  >
     <header class="hero">
       <img
         v-if="data.heroImage"
@@ -7,13 +10,23 @@
         :alt="data.heroAlt || 'hero'"
       >
 
-      <h1 v-if="data.heroText !== null" id="main-title" v-html="data.heroText"></h1>
+      <h1
+        v-if="data.heroText !== null"
+        id="main-title"
+        v-html="data.heroText"
+      >
+     </h1>
 
-      <h2 v-if="data.tagline !== null" class="description" v-html="data.tagline"></h2>
+      <h2
+        v-if="data.tagline !== null"
+        class="description"
+        v-html="data.tagline"
+      >
+      </h2>
 
       <p
-        class="action"
         v-if="data.actionText && data.actionLink"
+        class="action"
       >
         <NavLink
           class="action-button"
@@ -22,13 +35,14 @@
       </p>
     </header>
 
-    <Content class="theme-default-content custom"/>
+    <Content class="theme-default-content custom" />
 
-    <NewsList/>
+    <NewsList />
 
     <div
-      class="footer">
-      <Credits/>
+      class="footer"
+    >
+      <Credits />
     </div>
   </main>
 </template>

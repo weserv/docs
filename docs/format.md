@@ -29,7 +29,7 @@ We define a "far-future expiration" of 1 year by default. Valid durations that c
 - `186d` for 6 months
 - 1 year (365 days) - default
 
-Any other value will be ignore and `max-age` header will default to 1 year.
+Any other value will be ignored and the `max-age` will default to 1 year.
 
 More info: [Issue #186 - Increase Cache-Control: max-age= to 1 year instead of 1 month](https://github.com/weserv/images/issues/186).
 
@@ -51,9 +51,20 @@ More info: [Issue #37 - Return default image if the image's URL not found](https
 
 The URL must not include a `default` querystring (if it does, it will be ignored).
 
+<code-group>
+<code-block title="HTML" active>
 ```html
 <img src="//images.weserv.nl/?url=example.org/noimage.jpg&default=ssl:images.weserv.nl%2F%3Furl%3Dimages.weserv.nl/lichtenstein.jpg%26w%3D300">
 ```
+</code-block>
+
+<code-block title="Markdown">
+```md
+![Default image](https://images.weserv.nl/?url=example.org/noimage.jpg&default=ssl:images.weserv.nl%2F%3Furl%3Dimages.weserv.nl/lichtenstein.jpg%26w%3D300)
+```
+</code-block>
+</code-group>
+
 [![Default image](/static/lichtenstein.jpg?w=300)](/?url=example.org/noimage.jpg&default=ssl:images.weserv.nl%2F%3Furl%3Dimages.weserv.nl/lichtenstein.jpg%26w%3D300)
 
 ## Filename <Parameter text="&filename="/>
@@ -69,9 +80,20 @@ Adds interlacing to GIF and PNG. JPEGs become progressive.
 
 More info: [Issue #50 - Add parameter to use progressive JPEGs](https://github.com/weserv/images/issues/50).
 
+<code-group>
+<code-block title="HTML" active>
 ```html
 <img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&il">
 ```
+</code-block>
+
+<code-block title="Markdown">
+```md
+![Interlace / progressive](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&il)
+```
+</code-block>
+</code-group>
+
 [![Interlace / progressive](/static/lichtenstein.jpg?w=300&il)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&il)
 
 ## Number of pages <Parameter text="&n="/><Badge text="New!" type="warn" vertical="middle"/>
@@ -83,9 +105,20 @@ the document".
 `-1` will be useful if you need to resize an animated WebP or GIF image.
 :::
 
+<code-group>
+<code-block title="HTML" active>
 ```html
 <img src="//images.weserv.nl/?url=images.weserv.nl/banana.webp&h=300&output=gif&n=-1">
 ```
+</code-block>
+
+<code-block title="Markdown">
+```md
+![Number of pages](https://images.weserv.nl/?url=images.weserv.nl/banana.webp&h=300&output=gif&n=-1)
+```
+</code-block>
+</code-group>
+
 [![Number of pages](/static/banana.webp?h=300&output=gif&n=-1)](/?url=images.weserv.nl/banana.webp&h=300&output=gif&n=-1)
 
 ## Output <Parameter text="&output=" vertical="middle"/>
@@ -95,9 +128,20 @@ given, it will honor the origin image format.
 
 More info: [Issue #62 - Format conversion](https://github.com/weserv/images/issues/62).
 
+<code-group>
+<code-block title="HTML" active>
 ```html
 <img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&output=webp">
 ```
+</code-block>
+
+<code-block title="Markdown">
+```md
+![Output](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&output=webp)
+```
+</code-block>
+</code-group>
+
 [![Output](/static/lichtenstein.jpg?w=300&output=webp)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&output=webp)
 
 ## Page <Parameter text="&page="/>
@@ -110,7 +154,18 @@ multi-resolution image, you can use `-1` to get the largest page and `-2` to get
 Defines the quality of the image. Use values between `0` and `100`. Defaults to `85`. This only works
 when the output image is `jpg`, `tiff` or `webp`.
 
+<code-group>
+<code-block title="HTML" active>
 ```html
 <img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&q=20">
 ```
+</code-block>
+
+<code-block title="Markdown">
+```md
+![Quality](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&q=20)
+```
+</code-block>
+</code-group>
+
 [![Quality](/static/lichtenstein.jpg?w=300&q=20)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&q=20)

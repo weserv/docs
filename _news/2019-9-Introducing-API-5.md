@@ -41,7 +41,7 @@ Redis backed nginx module. The implementation is based on the [onsigntv/redis-ra
 which offers a straightforward implementation of the fairly sophisticated [generic cell rate algorithm][gcra],
 in 130 lines of C, without external dependencies.
 
-An additional feature of this module is that it's easy to check show your current rate limit quota:
+An additional feature of this module is that it's easy to check your current rate limit quota:
 ```bash
 $ curl -i https://images.weserv.nl/quota
 HTTP/1.1 200 OK
@@ -63,9 +63,20 @@ The source code of the rate limiter can be viewed on GitHub: [weserv/rate-limit-
 ## Support for animated images
 Thanks to [libvips 8.8][libvips-8.8], we've now enabled support for [animated WebP and GIF images][n-pages].
 
+<code-group>
+<code-block title="HTML" active>
 ```html
 <img src="//images.weserv.nl/?url=images.weserv.nl/banana.webp&h=300&output=gif&n=-1">
 ```
+</code-block>
+
+<code-block title="Markdown">
+```md
+![Animated image](https://images.weserv.nl/?url=images.weserv.nl/banana.webp&h=300&output=gif&n=-1)
+```
+</code-block>
+</code-group>
+
 [![Animated image](/static/banana.webp?h=300&output=gif&n=-1)](/?url=images.weserv.nl/banana.webp&h=300&output=gif&n=-1)
 
 ## Support for loading HEIC images
@@ -100,9 +111,20 @@ be as small as possible while ensuring its dimensions are greater than or equal 
 We introduced a new parameter named [`&tint`][tint] to tint an image using the provided chroma
 while preserving the image luminance.
 
+<code-group>
+<code-block title="HTML" active>
 ```html
 <img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&tint=red">
 ```
+</code-block>
+
+<code-block title="Markdown">
+```md
+![Tint](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&tint=red)
+```
+</code-block>
+</code-group>
+
 [![Tint](/static/lichtenstein.jpg?w=300&tint=red)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&tint=red)
 
 ## Arbitrary rotation angles
@@ -110,9 +132,20 @@ Instead of only being able to rotate multiples of 90 degrees, any angle can now 
 space can be filled with a background color by using `&rbg=`. To reflect this change, the `&or=`
 parameter has been renamed to [`&ro=`][rotation].
 
+<code-group>
+<code-block title="HTML" active>
 ```html
 <img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300&ro=45">
 ```
+</code-block>
+
+<code-block title="Markdown">
+```md
+![Rotation](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300&ro=45)
+```
+</code-block>
+</code-group>
+
 [![Rotation](/static/lichtenstein.jpg?h=300&ro=45)](/?url=images.weserv.nl/lichtenstein.jpg&h=300&ro=45)
 
 ## Adaptive filter and compression level

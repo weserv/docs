@@ -7,18 +7,40 @@ of them: the other dimension is automatically updated.
 
 Sets the width of the image, in pixels.
 
+<code-group>
+<code-block title="HTML" active>
 ```html
 <img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300">
 ```
+</code-block>
+
+<code-block title="Markdown">
+```md
+![Width](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300)
+```
+</code-block>
+</code-group>
+
 [![Width](/static/lichtenstein.jpg?w=300)](/?url=images.weserv.nl/lichtenstein.jpg&w=300)
 
 ## Height <Parameter text="&h="/>
 
 Sets the height of the image, in pixels.
 
+<code-group>
+<code-block title="HTML" active>
 ```html
 <img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300">
 ```
+</code-block>
+
+<code-block title="Markdown">
+```md
+![Height](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300)
+```
+</code-block>
+</code-group>
+
 [![Height](/static/lichtenstein.jpg?h=300)](/?url=images.weserv.nl/lichtenstein.jpg&h=300)
 
 ## Device pixel ratio <Parameter text="&dpr="/>
@@ -30,7 +52,18 @@ to work. Use values between `1` and `8`.
 
 More info: [Issue #115 - DPI support](https://github.com/weserv/images/issues/115).
 
+<code-group>
+<code-block title="HTML" active>
 ```html
 <img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=144&dpr=2">
 ```
+</code-block>
+
+<code-block title="Markdown">
+```md
+![Device pixel ratio](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=144&dpr=2)
+```
+</code-block>
+</code-group>
+
 [![Device pixel ratio](/static/lichtenstein.jpg?h=144&dpr=2)](/?url=images.weserv.nl/lichtenstein.jpg&h=144&dpr=2)

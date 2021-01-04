@@ -24,9 +24,20 @@ Controls the starting location of the crop. When `&fit=contain` is set, it deter
 
 For more information, please see the suggestion on our GitHub issue tracker: [Issue #24 - Aligning](https://github.com/weserv/images/issues/24).
 
+<code-group>
+<code-block title="HTML" active>
 ```html
 <img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover&a=top">
 ```
+</code-block>
+
+<code-block title="Markdown">
+```md
+![Alignment position](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover&a=top)
+```
+</code-block>
+</code-group>
+
 [![Alignment position](/static/lichtenstein.jpg?w=300&h=300&fit=cover&a=top)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover&a=top)
 
 ### Focal point
@@ -34,9 +45,20 @@ For more information, please see the suggestion on our GitHub issue tracker: [Is
 You can be more specific about the alignment using a focal point. This is defined using two offset
 percentages: `focal-x%-y%`.
 
+<code-group>
+<code-block title="HTML" active>
 ```html
 <img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover&a=focal-0-20">
 ```
+</code-block>
+
+<code-block title="Markdown">
+```md
+![Focal point](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover&a=focal-0-20)
+```
+</code-block>
+</code-group>
+
 [![Focal point](/static/lichtenstein.jpg?w=300&h=300&fit=cover&a=focal-0-20)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover&a=focal-0-20)
 
 ### Smart crop
@@ -51,9 +73,20 @@ More info: [Issue #90 - Add support for smart crop](https://github.com/weserv/im
 - `attention`: focus on the region with the highest luminance frequency, color saturation and
   presence of skin tones.
 
+<code-group>
+<code-block title="HTML" active>
 ```html
 <img src="//images.weserv.nl/?url=images.weserv.nl/puppy.jpg&w=300&h=300&fit=cover&a=attention">
 ```
+</code-block>
+
+<code-block title="Markdown">
+```md
+![Smart crop](https://images.weserv.nl/?url=images.weserv.nl/puppy.jpg&w=300&h=300&fit=cover&a=attention)
+```
+</code-block>
+</code-group>
+
 [![Smart crop](/static/puppy.jpg?w=300&h=300&fit=cover&a=attention)](/?url=images.weserv.nl/puppy.jpg&w=300&h=300&fit=cover&a=attention)
 
 ## Rectangle crop <Parameter text="&c[x,y,w,h]="/>
@@ -65,9 +98,20 @@ You can use `&precrop`, for a pre-resize crop behaviour.
 See [Issue #176 - Combine cropping with resizing](https://github.com/weserv/images/issues/176) for more information.
 :::
 
+<code-group>
+<code-block title="HTML" active>
 ```html
 <img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&cx=680&cy=500&cw=300&ch=300">
 ```
+</code-block>
+
+<code-block title="Markdown">
+```md
+![Rectangle crop](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&cx=680&cy=500&cw=300&ch=300)
+```
+</code-block>
+</code-group>
+
 [![Rectangle crop](/static/lichtenstein.jpg?cx=680&cy=500&cw=300&ch=300)](/?url=images.weserv.nl/lichtenstein.jpg&cx=680&cy=500&cw=300&ch=300)
 
 ## Trim <Parameter text="&trim="/>
@@ -78,7 +122,18 @@ away similar color values. You also can specify just `&trim`, which defaults to 
 
 More info: [Issue #39 - able to remove black/white whitespace](https://github.com/weserv/images/issues/39).
 
+<code-group>
+<code-block title="HTML" active>
 ```html
 <img src="//images.weserv.nl/?url=images.weserv.nl/transparency_demo.png&w=300&trim=10">
 ```
+</code-block>
+
+<code-block title="Markdown">
+```md
+![Trim](https://images.weserv.nl/?url=images.weserv.nl/transparency_demo.png&w=300&trim=10)
+```
+</code-block>
+</code-group>
+
 [![Trim](/static/transparency_demo.png?w=300&trim=10)](/?url=images.weserv.nl/transparency_demo.png&w=300&trim=10)

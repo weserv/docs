@@ -6,18 +6,40 @@ Change the orientation of your image, by either flipping along its axes or rotat
 
 Flip the image about the vertical Y axis. This always occurs after rotation, if any.
 
+<code-group>
+<code-block title="HTML" active>
 ```html
 <img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300&flip">
 ```
+</code-block>
+
+<code-block title="Markdown">
+```md
+![Flip](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300&flip)
+```
+</code-block>
+</code-group>
+
 [![Flip](/static/lichtenstein.jpg?h=300&flip)](/?url=images.weserv.nl/lichtenstein.jpg&h=300&flip)
 
 ## Flop <Parameter text="&flop"/><Badge text="New!" type="warn" vertical="middle"/>
 
 Flop the image about the horizontal X axis. This always occurs after rotation, if any.
 
+<code-group>
+<code-block title="HTML" active>
 ```html
 <img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300&flop">
 ```
+</code-block>
+
+<code-block title="Markdown">
+```md
+![Flop](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300&flop)
+```
+</code-block>
+</code-group>
+
 [![Flop](/static/lichtenstein.jpg?h=300&flop)](/?url=images.weserv.nl/lichtenstein.jpg&h=300&flop)
 
 ## Rotation <Parameter text="&ro="/>
@@ -30,7 +52,18 @@ color can be provided with the `&rbg=` parameter. See [here](adjustment.md#backg
 
 If no angle is provided, it is determined from the EXIF data.
 
+<code-group>
+<code-block title="HTML" active>
 ```html
 <img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300&ro=45&rbg=red">
 ```
+</code-block>
+
+<code-block title="Markdown">
+```md
+![Rotation](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300&ro=45&rbg=red)
+```
+</code-block>
+</code-group>
+
 [![Rotation](/static/lichtenstein.jpg?h=300&ro=45&rbg=red)](/?url=images.weserv.nl/lichtenstein.jpg&h=300&ro=45&rbg=red)

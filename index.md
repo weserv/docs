@@ -55,7 +55,7 @@ On average, we resize 6 million (6&times;10<sup>6</sup>) images per hour, which 
     </a>
   </div>
   <div class="feature small">
-    <a href="https://github.com/weserv/images/blob/5.x/DOCKER.md">
+    <a href="https://github.com/weserv/images/tree/5.x/docker">
        <div class="feature-icon-small">
           <i class="lab la-fw la-docker"/>
        </div>

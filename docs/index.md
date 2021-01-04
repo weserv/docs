@@ -17,7 +17,18 @@ and display it.
 You pass the image URL and a set of parameters. images.weserv.nl will then fetch the image, resize it,
 cache it and display it. The next time the request comes, it will serve the cached version.
 
+<code-group>
+<code-block title="HTML" active>
 ```html
 <!-- images.weserv.nl/lichtenstein.jpg -->
 <img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300">
 ```
+</code-block>
+
+<code-block title="Markdown">
+```md
+<!--- images.weserv.nl/lichtenstein.jpg --->
+![Lichtenstein](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300)
+```
+</code-block>
+</code-group>

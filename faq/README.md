@@ -186,30 +186,58 @@ This is because we don't use Last-Modified headers.
 We disable 2 (default) settings regarding cache-control. These are the ETag header, and the Last-
 Modified header.
 
-We do set the Cache-Control header. Allow me to explain this decision, using Apache-config.
-(Images.weserv.nl uses [nginx][nginx] on all servers, but Apache is more common for most people, and we
-did use Apache in 2011)
+We do set the Cache-Control header, which can be controlled via the [`&max-age=`][cache-control] parameter. Allow me
+to explain this decision, using nginx and Apache configuration.
 
-Consider the following Apache settings, these are identical to the nginx-settings we use:
+Consider the following nginx and Apache settings, these are identical to the settings we use:
+
+<code-group>
+<code-block title="nginx" active>
+```nginx
+http {
+    etag off; # Disable ETag header
+    expires 1y; # Far-future expiration
+}
 ```
+</code-block>
+
+<code-block title="Apache">
+```apacheconf
 Header unset ETag
 FileETag None
 Header set Cache-Control "max-age=31536000"
 ```
-The first two rules disable ETags completely, so the browser is somewhat forced to listen to the Cache-
-Control header. The last rule tells the browser to cache the file 31536000 seconds, or 1 year.
+</code-block>
+</code-group>
+
+These directives completely disables ETags, so the browser is somewhat forced to listen to the Cache-
+Control header. It also tells the browser to cache the file 31536000 seconds, or 1 year.
 
 Optional, we use multiple servers to serve static content, and we are not sure about the last-modified
 times those servers report, because each has his own version of the cache, so we also use:
+
+<code-group>
+<code-block title="nginx" active>
+```nginx
+http {
+    add_header Last-Modified "" always; # Always remove the Last-Modified header
+}
 ```
+</code-block>
+
+<code-block title="Apache">
+```apacheconf
 Header unset Last-Modified
 ```
-It tells Apache to not serve any Last-Modified headers, so browsers can only listen to the Cache-Control
-max-age header.
+</code-block>
+</code-group>
 
-These settings are used by us on lots of high-traffic websites, and disabling of ETags and Last-Modified
-headers sure helped to drive traffic down to one fifth of what it used to be. Especially Internet Explorer is
-very sensitive to those settings.
+Which tells the webservers to not serve any Last-Modified headers, so browsers can only listen to the
+Cache-Control max-age header.
+
+These settings are used by us on lots of high-traffic websites, and disabling the ETag and Last-Modified
+headers have certainly helped to reduce traffic to a fifth of what it used to be. Especially Internet Explorer
+is very sensitive to those settings.
 
 The Yahoo Developer Network recommends turning off ETags because of this misbehavior:  
 [Best practices for speeding up your web site - Disable ETags][disable-etags].
@@ -255,5 +283,6 @@ your question by featuring it on this page!
 [n-pages]: ../docs/format.md#number-of-pages
 [quality]: ../docs/format.md#quality
 [nginx]: https://nginx.org/
+[cache-control]: ../docs/format.md#cache-control
 [disable-etags]: https://developer.yahoo.com/performance/rules.html#etags
 [redbot]: https://redbot.org/
