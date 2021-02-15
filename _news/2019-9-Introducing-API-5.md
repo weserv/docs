@@ -46,15 +46,15 @@ An additional feature of this module is that it's easy to check your current rat
 $ curl -i https://images.weserv.nl/quota
 HTTP/1.1 200 OK
 Date: Sun, 01 Sep 2019 00:00:00 GMT
-X-RateLimit-Limit: 700
-X-RateLimit-Remaining: 700
+X-RateLimit-Limit: 2500
+X-RateLimit-Remaining: 2500
 X-RateLimit-Reset: 0
 
-{"X-RateLimit-Limit":700, "X-RateLimit-Remaining":700, "X-RateLimit-Reset":0}
+{"X-RateLimit-Limit":2500, "X-RateLimit-Remaining":2500, "X-RateLimit-Reset":0}
 ```
 
 ::: tip
-Our limit is around 700 images per 3 minutes. Accessing this endpoint does not count against
+Our limit is around 2500 images per 10 minutes. Accessing this endpoint does not count against
 your rate limit.
 :::
 

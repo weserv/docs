@@ -35,7 +35,7 @@ There is a filter on the origin domain name. This means that we refuse to downlo
 websites, to prevent our service from being blocked by others. This filtering is handled by [OpenDNS
 domain tagging][opendns-domain-tagging].
 
-Furthermore, there is a request limit per visitor IP for uncached requests, which is 700 images per 3
+Furthermore, there is a request limit per visitor IP for uncached requests, which is 2500 images per 10
 minutes, after which the IP-address will be blocked for 1 hour.
 
 We are not a fan of filtering or limitations, but even more so, we are not a fan of being filtered. It is
