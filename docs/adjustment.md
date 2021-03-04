@@ -87,18 +87,18 @@ You can use `&start` and `&stop` to define the duotone colors. By default, it wi
 <code-group>
 <code-block title="HTML" active>
 ```html
-<img src="//images.weserv.nl/?url=images.weserv.nl/zebra.jpg&w=300&h=300&fit=cover&a=focal-82-0&filt=duotone">
+<img src="//images.weserv.nl/?url=images.weserv.nl/zebra.jpg&w=300&h=300&fit=cover&a=focal&fpx=0.6&filt=duotone">
 ```
 </code-block>
 
 <code-block title="Markdown">
 ```md
-![Filter](https://images.weserv.nl/?url=images.weserv.nl/zebra.jpg&w=300&h=300&fit=cover&a=focal-82-0&filt=duotone)
+![Filter](https://images.weserv.nl/?url=images.weserv.nl/zebra.jpg&w=300&h=300&fit=cover&a=focal&fpx=0.6&filt=duotone)
 ```
 </code-block>
 </code-group>
 
-[![Filter](/static/zebra.jpg?w=300&h=300&fit=cover&a=focal-82-0&filt=duotone)](/?url=images.weserv.nl/zebra.jpg&w=300&h=300&fit=cover&a=focal-82-0&filt=duotone)
+[![Filter](/static/zebra.jpg?w=300&h=300&fit=cover&a=focal&fpx=0.6&filt=duotone)](/?url=images.weserv.nl/zebra.jpg&w=300&h=300&fit=cover&a=focal&fpx=0.6&filt=duotone)
 
 ## Gamma <Parameter text="&gam="/>
 

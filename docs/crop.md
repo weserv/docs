@@ -40,28 +40,29 @@ For more information, please see the suggestion on our GitHub issue tracker: [Is
 
 [![Alignment position](/static/lichtenstein.jpg?w=300&h=300&fit=cover&a=top)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover&a=top)
 
-### Focal point
+### Focal point <Parameter text="&a=focal"/>
 
-You can be more specific about the alignment using a focal point. This is defined using two offset
-percentages: `focal-x%-y%`.
+You can be more specific about the alignment using a focal point. This can be set using a horizontal
+(`&fpx=`) and vertical (`&fpy=`) offset decimal value (a float between `0.0` and `1.0`, inclusive). The
+default value is `0.5`, or the center of the image.
 
 <code-group>
 <code-block title="HTML" active>
 ```html
-<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover&a=focal-0-20">
+<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover&a=focal&fpy=0.45">
 ```
 </code-block>
 
 <code-block title="Markdown">
 ```md
-![Focal point](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover&a=focal-0-20)
+![Focal point](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover&a=focal&fpy=0.45)
 ```
 </code-block>
 </code-group>
 
-[![Focal point](/static/lichtenstein.jpg?w=300&h=300&fit=cover&a=focal-0-20)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover&a=focal-0-20)
+[![Focal point](/static/lichtenstein.jpg?w=300&h=300&fit=cover&a=focal&fpy=0.45)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover&a=focal&fpy=0.45)
 
-### Smart crop
+### Smart crop <Parameter text="&a=[entropy,attention]"/>
 
 An experimental strategy-based approach to crop the image by removing boring parts. This only works
 with `&fit=cover`.
