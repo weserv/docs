@@ -34,7 +34,11 @@ More info: [Issue #81 - Background setting](https://github.com/weserv/images/iss
 
 ## Blur <Parameter text="&blur="/>
 
-Adds a blur effect to the image. Use values between `0` and `100`.
+Adds a blur effect to the image. When used without a value (`&blur`), performs a fast, mild blur of the
+output image. When a value is provided, performs a slower, more accurate Gaussian blur.
+
+Use values between `0.3` and `1000`, representing the sigma of the Gaussian mask, where `sigma = 1 +
+radius / 2`.
 
 More info: [Issue #69 - Allow blur transformation (with radius parameter)](https://github.com/weserv/images/issues/69).
 
@@ -102,7 +106,7 @@ You can use `&start` and `&stop` to define the duotone colors. By default, it wi
 
 ## Gamma <Parameter text="&gam="/>
 
-Adjusts the image gamma. Use values between `1` and `3`. The default value is `2.2`, a suitable
+Adjusts the image gamma. Use values between `1.0` and `3.0`. The default value is `2.2`, a suitable
 approximation for sRGB images.
 
 <code-group>

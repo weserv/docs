@@ -22,14 +22,15 @@ More info: [Issue #59 - Return image base64 encoded](https://github.com/weserv/i
 Defines for how long an image should be cached by the browser. This will change the `max-age` of the
 `Cache-Control` HTTP-header.
 
-We define a "far-future expiration" of 1 year by default. Valid durations that can be specified are:
-- `31d` for 1 month
-- `62d` for 2 months
-- `93d` for 3 months
-- `186d` for 6 months
-- 1 year (365 days) - default
+We define a "far-future expiration" of 1 year by default. The duration can be specified in days, weeks,
+months, and years using the following suffixes:
+- `d`: days
+- `w`: weeks, 7 days
+- `M`: months, 30 days
+- `y`: years, 365 days
 
-Any other value will be ignored and the `max-age` will default to 1 year.
+A duration must be in the range of `1d` (1 day) to `1y` (1 year), inclusive. Any other value will be ignored
+and fallback to the default value of 1 year.
 
 More info: [Issue #186 - Increase Cache-Control: max-age= to 1 year instead of 1 month](https://github.com/weserv/images/issues/186).
 
@@ -151,7 +152,7 @@ multi-resolution image, you can use `-1` to get the largest page and `-2` to get
 
 ## Quality <Parameter text="&q=" vertical="middle"/>
 
-Defines the quality of the image. Use values between `0` and `100`. Defaults to `85`. This only works
+Defines the quality of the image. Use values between `1` and `100`. Defaults to `80`. This only works
 when the output image is `jpg`, `tiff` or `webp`.
 
 <code-group>
