@@ -1,0 +1,10 @@
+.logo {
+  height: 2.2rem !important;
+  vertical-align: middle !important;
+}
+
+@media (min-width: 751px) and (max-width: 840px) {
+  .nav-bar-title {
+    font-size: 0 !important;
+  }
+}

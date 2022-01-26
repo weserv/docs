@@ -10,25 +10,25 @@ and display it.
   - This can be very useful for embedding HTTP images on HTTPS websites. HTTPS origin hosts can be
     used by [prefixing the hostname with https://](https://github.com/weserv/images/issues/33).
 - The CDN is provided by [Cloudflare](https://www.cloudflare.com/). Images are being cached and delivered straight from  
-  [190+ global datacenters](https://www.cloudflare.com/network/). This ensures the fastest load times and best performance.
+  [200+ global datacenters](https://www.cloudflare.com/network/). This ensures the fastest load times and best performance.
 
 ## How it works
 
 You pass the image URL and a set of parameters. images.weserv.nl will then fetch the image, resize it,
 cache it and display it. The next time the request comes, it will serve the cached version.
 
-<code-group>
-<code-block title="HTML" active>
+<CodeGroup>
+<CodeGroupItem title="HTML" active>
 ```html
 <!-- images.weserv.nl/lichtenstein.jpg -->
 <img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300">
 ```
-</code-block>
+</CodeGroupItem>
 
-<code-block title="Markdown">
+<CodeGroupItem title="Markdown">
 ```md
 <!--- images.weserv.nl/lichtenstein.jpg --->
 ![Lichtenstein](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300)
 ```
-</code-block>
-</code-group>
+</CodeGroupItem>
+</CodeGroup>

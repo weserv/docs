@@ -1,6 +1,6 @@
 {
   "name": "@weserv/docs-theme",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Default theme for images.weserv.nl",
   "homepage": "https://github.com/weserv/docs#readme",
   "bugs": {
@@ -9,12 +9,12 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/weserv/docs.git",
-    "directory": ".vuepress/theme"
+    "directory": ".vitepress/theme"
   },
   "license": "MIT",
   "author": "Kleis Auke Wolthuizen",
   "main": "index.js",
   "devDependencies": {
-    "@vuepress/theme-default": "^1.8.2"
+    "line-awesome": "^1.3.0"
   }
 }

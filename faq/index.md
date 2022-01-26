@@ -1,7 +1,3 @@
----
-sidebar: auto
----
-
 # FAQ
 
 ## What is images.weserv.nl?
@@ -191,24 +187,24 @@ to explain this decision, using nginx and Apache configuration.
 
 Consider the following nginx and Apache settings, these are identical to the settings we use:
 
-<code-group>
-<code-block title="nginx" active>
+<CodeGroup>
+<CodeGroupItem title="nginx" active>
 ```nginx
 http {
     etag off; # Disable ETag header
     expires 1y; # Far-future expiration
 }
 ```
-</code-block>
+</CodeGroupItem>
 
-<code-block title="Apache">
+<CodeGroupItem title="Apache">
 ```apacheconf
 Header unset ETag
 FileETag None
 Header set Cache-Control "max-age=31536000"
 ```
-</code-block>
-</code-group>
+</CodeGroupItem>
+</CodeGroup>
 
 These directives completely disables ETags, so the browser is somewhat forced to listen to the Cache-
 Control header. It also tells the browser to cache the file 31536000 seconds, or 1 year.
@@ -216,21 +212,21 @@ Control header. It also tells the browser to cache the file 31536000 seconds, or
 Optional, we use multiple servers to serve static content, and we are not sure about the last-modified
 times those servers report, because each has his own version of the cache, so we also use:
 
-<code-group>
-<code-block title="nginx" active>
+<CodeGroup>
+<CodeGroupItem title="nginx" active>
 ```nginx
 http {
     add_header Last-Modified "" always; # Always remove the Last-Modified header
 }
 ```
-</code-block>
+</CodeGroupItem>
 
-<code-block title="Apache">
+<CodeGroupItem title="Apache">
 ```apacheconf
 Header unset Last-Modified
 ```
-</code-block>
-</code-group>
+</CodeGroupItem>
+</CodeGroup>
 
 Which tells the webservers to not serve any Last-Modified headers, so browsers can only listen to the
 Cache-Control max-age header.
@@ -268,7 +264,7 @@ your question by featuring it on this page!
 [weserv-github]: https://github.com/weserv/images/
 [weserv-issues]: https://github.com/weserv/images/issues
 [weserv-license]: https://github.com/weserv/images/blob/5.x/LICENSE
-[weserv-docker]: https://github.com/weserv/images/blob/5.x/DOCKER.md
+[weserv-docker]: https://github.com/weserv/images/tree/5.x/docker#readme
 [weserv-privacy-policy]: https://github.com/weserv/images/blob/5.x/Privacy-Policy.md
 [cloudflare-network]: https://www.cloudflare.com/network/
 [ovh]: https://www.ovh.com/
@@ -280,9 +276,9 @@ your question by featuring it on this page!
 [cache-removal-tool]: https://github.com/weserv/images/issues/14
 [hsts]: https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security
 [magick-formats]: https://www.imagemagick.org/script/formats.php#supported
-[n-pages]: ../docs/format.md#number-of-pages
-[quality]: ../docs/format.md#quality
+[n-pages]: /docs/format.md#number-of-pages
+[quality]: /docs/format.md#quality
 [nginx]: https://nginx.org/
-[cache-control]: ../docs/format.md#cache-control
+[cache-control]: /docs/format.md#cache-control
 [disable-etags]: https://developer.yahoo.com/performance/rules.html#etags
 [redbot]: https://redbot.org/

@@ -1,9 +1,5 @@
 ---
-title: Introducing API version 5
 editLink: false
-date: 2019-09-01
-summary: Rewrote the entire codebase to C++, support for animated WebP and GIF images, plus many more improvements.
-sidebar: auto
 ---
 
 # Introducing API version 5
@@ -63,21 +59,23 @@ The source code of the rate limiter can be viewed on GitHub: [weserv/rate-limit-
 ## Support for animated images
 Thanks to [libvips 8.8][libvips-8.8], we've now enabled support for [animated WebP and GIF images][n-pages].
 
-<code-group>
-<code-block title="HTML" active>
+<CodeGroup>
+<CodeGroupItem title="HTML" active>
 ```html
 <img src="//images.weserv.nl/?url=images.weserv.nl/banana.webp&h=300&output=gif&n=-1">
 ```
-</code-block>
+</CodeGroupItem>
 
-<code-block title="Markdown">
+<CodeGroupItem title="Markdown">
 ```md
 ![Animated image](https://images.weserv.nl/?url=images.weserv.nl/banana.webp&h=300&output=gif&n=-1)
 ```
-</code-block>
-</code-group>
+</CodeGroupItem>
+</CodeGroup>
 
-[![Animated image](/static/banana.webp?h=300&output=gif&n=-1)](/?url=images.weserv.nl/banana.webp&h=300&output=gif&n=-1)
+<a href="/?url=images.weserv.nl/banana.webp&h=300&output=gif&n=-1" target="_blank">
+  <img :src="$withBase('/static/banana.webp?h=300&output=gif&n=-1')" alt="Animated image">
+</a>
 
 ## Support for loading HEIC images
 We've added support for loading HEIC-images. This is the new image compression standard being used by
@@ -111,42 +109,46 @@ be as small as possible while ensuring its dimensions are greater than or equal 
 We introduced a new parameter named [`&tint`][tint] to tint an image using the provided chroma
 while preserving the image luminance.
 
-<code-group>
-<code-block title="HTML" active>
+<CodeGroup>
+<CodeGroupItem title="HTML" active>
 ```html
 <img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&tint=red">
 ```
-</code-block>
+</CodeGroupItem>
 
-<code-block title="Markdown">
+<CodeGroupItem title="Markdown">
 ```md
 ![Tint](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&tint=red)
 ```
-</code-block>
-</code-group>
+</CodeGroupItem>
+</CodeGroup>
 
-[![Tint](/static/lichtenstein.jpg?w=300&tint=red)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&tint=red)
+<a href="/?url=images.weserv.nl/lichtenstein.jpg&w=300&tint=red" target="_blank">
+  <img :src="$withBase('/static/lichtenstein.jpg?w=300&tint=red')" alt="Tint">
+</a>
 
 ## Arbitrary rotation angles
 Instead of only being able to rotate multiples of 90 degrees, any angle can now be given. The remaining
 space can be filled with a background color by using `&rbg=`. To reflect this change, the `&or=`
 parameter has been renamed to [`&ro=`][rotation].
 
-<code-group>
-<code-block title="HTML" active>
+<CodeGroup>
+<CodeGroupItem title="HTML" active>
 ```html
 <img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300&ro=45">
 ```
-</code-block>
+</CodeGroupItem>
 
-<code-block title="Markdown">
+<CodeGroupItem title="Markdown">
 ```md
 ![Rotation](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300&ro=45)
 ```
-</code-block>
-</code-group>
+</CodeGroupItem>
+</CodeGroup>
 
-[![Rotation](/static/lichtenstein.jpg?h=300&ro=45)](/?url=images.weserv.nl/lichtenstein.jpg&h=300&ro=45)
+<a href="/?url=images.weserv.nl/lichtenstein.jpg&h=300&ro=45" target="_blank">
+  <img :src="$withBase('/static/lichtenstein.jpg?h=300&ro=45')" alt="Rotation">
+</a>
 
 ## Adaptive filter and compression level
 To minimize the size of PNG images and thus reduce their load time we've introduced some new
@@ -177,7 +179,7 @@ type of website or application.
 - `&a=crop-x%-y%` has been renamed to [`&a=focal-x%-y%`][focal-point].
 - `&errorredirect=` has been renamed to [`&default=`][default-image].
 
-[version-4-post]: /news/2018/07/29/introducing-api-4/
+[version-4-post]: /news/2018/07/29/introducing-api-4.md
 [cloudflare]: https://www.cloudflare.com/
 [nginx]: https://nginx.org/
 [libvips]: https://github.com/libvips/libvips
@@ -190,25 +192,25 @@ type of website or application.
 [gcra]: https://en.wikipedia.org/wiki/Generic_cell_rate_algorithm
 [rate-limit-nginx-module]: https://github.com/weserv/rate-limit-nginx-module
 [libvips-8.8]: https://libvips.github.io/libvips/2019/04/22/What's-new-in-8.8.html
-[n-pages]: ../docs/format.md#number-of-pages
+[n-pages]: /docs/format.md#number-of-pages
 [avif]: https://aomediacodec.github.io/av1-avif/
-[fit]: ../docs/fit.md
-[fit-inside]: ../docs/fit.md#inside
-[fit-outside]: ../docs/fit.md#outside
-[fit-cover]: ../docs/fit.md#cover
-[fit-fill]: ../docs/fit.md#fill
-[fit-contain]: ../docs/fit.md#contain
-[without-enlargement]: ../docs/fit.md#without-enlargement
-[tint]: ../docs/adjustment.md#tint
-[rotation]: ../docs/orientation.md#rotation
-[adaptive-filter]: ../docs/format.md#adaptive-filter
-[compression-level]: ../docs/format.md#compression-level
-[output]: ../docs/format.md#output
-[flip]: ../docs/orientation.md#flip
-[flop]: ../docs/orientation.md#flop
-[filter]: ../docs/adjustment.md#filter
-[focal-point]: ../docs/crop.md#focal-point
-[default-image]: ../docs/format.md#default-image
-[rectangle-crop]: ../docs/crop.md#rectangle-crop
-[page]: ../docs/format.md#page
-[cache-control]: ../docs/format.md#cache-control
+[fit]: /docs/fit.md
+[fit-inside]: /docs/fit.md#inside
+[fit-outside]: /docs/fit.md#outside
+[fit-cover]: /docs/fit.md#cover
+[fit-fill]: /docs/fit.md#fill
+[fit-contain]: /docs/fit.md#contain
+[without-enlargement]: /docs/fit.md#without-enlargement
+[tint]: /docs/adjustment.md#tint
+[rotation]: /docs/orientation.md#rotation
+[adaptive-filter]: /docs/format.md#adaptive-filter
+[compression-level]: /docs/format.md#compression-level
+[output]: /docs/format.md#output
+[flip]: /docs/orientation.md#flip
+[flop]: /docs/orientation.md#flop
+[filter]: /docs/adjustment.md#filter
+[focal-point]: /docs/crop.md#focal-point
+[default-image]: /docs/format.md#default-image
+[rectangle-crop]: /docs/crop.md#rectangle-crop
+[page]: /docs/format.md#page
+[cache-control]: /docs/format.md#cache-control

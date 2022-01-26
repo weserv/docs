@@ -1,9 +1,5 @@
 ---
-title: Introducing API version 4
 editLink: false
-date: 2018-07-29
-summary: Switched to OpenResty and LuaJIT, introduced a friendlier URI parser, plus some new parameters were added.
-sidebar: auto
 ---
 
 # Introducing API version 4
@@ -73,7 +69,7 @@ The code is available on the [4.x branch][4.x-branch], this will become the defa
 [php-vips]: https://github.com/libvips/php-vips
 [lua-vips]: https://github.com/libvips/lua-vips
 [issue-tracker]: https://github.com/weserv/images/issues
-[mask]: ../docs/mask.md#mask-type
-[mask-trim]: ../docs/mask.md#mask-trim
-[mask-bg]: ../docs/mask.md#mask-background
+[mask]: /docs/mask.md#mask-type
+[mask-trim]: /docs/mask.md#mask-trim
+[mask-bg]: /docs/mask.md#mask-background
 [4.x-branch]: https://github.com/weserv/images/tree/4.x

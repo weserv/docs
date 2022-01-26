@@ -3,47 +3,51 @@
 Controls how the image needs to be resized. You can use both `&w=` and `&h=` parameters or only one
 of them: the other dimension is automatically updated.
 
-## Width <Parameter text="&w="/>
+## Width <QueryString field="w" />
 
 Sets the width of the image, in pixels.
 
-<code-group>
-<code-block title="HTML" active>
+<CodeGroup>
+<CodeGroupItem title="HTML" active>
 ```html
 <img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300">
 ```
-</code-block>
+</CodeGroupItem>
 
-<code-block title="Markdown">
+<CodeGroupItem title="Markdown">
 ```md
 ![Width](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300)
 ```
-</code-block>
-</code-group>
+</CodeGroupItem>
+</CodeGroup>
 
-[![Width](/static/lichtenstein.jpg?w=300)](/?url=images.weserv.nl/lichtenstein.jpg&w=300)
+<a href="/?url=images.weserv.nl/lichtenstein.jpg&w=300" target="_blank">
+  <img :src="$withBase('/static/lichtenstein.jpg?w=300')" alt="Width">
+</a>
 
-## Height <Parameter text="&h="/>
+## Height <QueryString field="h" />
 
 Sets the height of the image, in pixels.
 
-<code-group>
-<code-block title="HTML" active>
+<CodeGroup>
+<CodeGroupItem title="HTML" active>
 ```html
 <img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300">
 ```
-</code-block>
+</CodeGroupItem>
 
-<code-block title="Markdown">
+<CodeGroupItem title="Markdown">
 ```md
 ![Height](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300)
 ```
-</code-block>
-</code-group>
+</CodeGroupItem>
+</CodeGroup>
 
-[![Height](/static/lichtenstein.jpg?h=300)](/?url=images.weserv.nl/lichtenstein.jpg&h=300)
+<a href="/?url=images.weserv.nl/lichtenstein.jpg&h=300" target="_blank">
+  <img :src="$withBase('/static/lichtenstein.jpg?h=300')" alt="Height">
+</a>
 
-## Device pixel ratio <Parameter text="&dpr="/>
+## Device pixel ratio <QueryString field="dpr" />
 
 The device pixel ratio is used to easily convert between CSS pixels and device pixels. This makes it
 possible to display images at the correct pixel density on a variety of devices such as Apple devices with
@@ -52,18 +56,20 @@ to work. Use values between `1` and `8`.
 
 More info: [Issue #115 - DPI support](https://github.com/weserv/images/issues/115).
 
-<code-group>
-<code-block title="HTML" active>
+<CodeGroup>
+<CodeGroupItem title="HTML" active>
 ```html
 <img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=144&dpr=2">
 ```
-</code-block>
+</CodeGroupItem>
 
-<code-block title="Markdown">
+<CodeGroupItem title="Markdown">
 ```md
 ![Device pixel ratio](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=144&dpr=2)
 ```
-</code-block>
-</code-group>
+</CodeGroupItem>
+</CodeGroup>
 
-[![Device pixel ratio](/static/lichtenstein.jpg?h=144&dpr=2)](/?url=images.weserv.nl/lichtenstein.jpg&h=144&dpr=2)
+<a href="/?url=images.weserv.nl/lichtenstein.jpg&h=144&dpr=2" target="_blank">
+  <img :src="$withBase('/static/lichtenstein.jpg?h=144&dpr=2')" alt="Device pixel ratio">
+</a>

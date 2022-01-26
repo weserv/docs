@@ -2,7 +2,7 @@
 
 Controls the visible and non-visible area of the image.
 
-## Mask type <Parameter text="&mask="/>
+## Mask type <QueryString field="mask" />
 
 Sets the mask type from a predefined list of shapes.
 
@@ -20,58 +20,64 @@ More info: [Issue #49 - Add circle effect to photos](https://github.com/weserv/i
 - `star`: 5-point star
 - `heart`
 
-<code-group>
-<code-block title="HTML" active>
+<CodeGroup>
+<CodeGroupItem title="HTML" active>
 ```html
 <img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover&mask=circle">
 ```
-</code-block>
+</CodeGroupItem>
 
-<code-block title="Markdown">
+<CodeGroupItem title="Markdown">
 ```md
 ![Mask type](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover&mask=circle)
 ```
-</code-block>
-</code-group>
+</CodeGroupItem>
+</CodeGroup>
 
-[![Mask type](/static/lichtenstein.jpg?w=300&h=300&fit=cover&mask=circle)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover&mask=circle)
+<a href="/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover&mask=circle" target="_blank">
+  <img :src="$withBase('/static/lichtenstein.jpg?w=300&h=300&fit=cover&mask=circle')" alt="Mask type">
+</a>
 
-## Mask trim <Parameter text="&mtrim"/>
+## Mask trim <QueryString field="mtrim" bool="true" />
 
 Removes the remaining whitespace from the mask.
 
-<code-group>
-<code-block title="HTML" active>
+<CodeGroup>
+<CodeGroupItem title="HTML" active>
 ```html
 <img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=900&fit=cover&a=crop-22-0&mask=circle&mtrim">
 ```
-</code-block>
+</CodeGroupItem>
 
-<code-block title="Markdown">
+<CodeGroupItem title="Markdown">
 ```md
 ![Mask trim](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=900&fit=cover&a=crop-22-0&mask=circle&mtrim)
 ```
-</code-block>
-</code-group>
+</CodeGroupItem>
+</CodeGroup>
 
-[![Mask trim](/static/lichtenstein.jpg?w=300&h=900&fit=cover&a=crop-22-0&mask=circle&mtrim)](/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=900&fit=cover&a=crop-22-0&mask=circle&mtrim)
+<a href="/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=900&fit=cover&a=crop-22-0&mask=circle&mtrim" target="_blank">
+  <img :src="$withBase('/static/lichtenstein.jpg?w=300&h=900&fit=cover&a=crop-22-0&mask=circle&mtrim')" alt="Mask trim">
+</a>
 
-## Mask background <Parameter text="&mbg="/>
+## Mask background <QueryString field="mbg" />
 
 Sets the background color of the mask. See [here](adjustment.md#background) for the supported color formats.
 
-<code-group>
-<code-block title="HTML" active>
+<CodeGroup>
+<CodeGroupItem title="HTML" active>
 ```html
 <img src="//images.weserv.nl/?url=images.weserv.nl/transparency_demo.png&w=400&bg=black&mask=heart&mbg=red">
 ```
-</code-block>
+</CodeGroupItem>
 
-<code-block title="Markdown">
+<CodeGroupItem title="Markdown">
 ```md
 ![Mask background](https://images.weserv.nl/?url=images.weserv.nl/transparency_demo.png&w=400&bg=black&mask=heart&mbg=red)
 ```
-</code-block>
-</code-group>
+</CodeGroupItem>
+</CodeGroup>
 
-[![Mask background](/static/transparency_demo.png?w=400&bg=black&mask=heart&mbg=red)](/?url=images.weserv.nl/transparency_demo.png&w=400&bg=black&mask=heart&mbg=red)
+<a href="/?url=images.weserv.nl/transparency_demo.png&w=400&bg=black&mask=heart&mbg=red" target="_blank">
+  <img :src="$withBase('/static/transparency_demo.png?w=400&bg=black&mask=heart&mbg=red')" alt="Mask background">
+</a>

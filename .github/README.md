@@ -5,7 +5,7 @@ Documentation for [images.weserv.nl](https://images.weserv.nl/).
 ## Built with
 
 - [Node.js](https://nodejs.org/)
-- [VuePress](https://github.com/vuejs/vuepress)
+- [VitePress](https://github.com/vuejs/vitepress)
 
 ## Getting started
 
@@ -18,9 +18,6 @@ yarn # OR npm install
 ### As easy as 1, 2, 3
 
 ```bash
-# Install vuepress
-yarn global add vuepress # OR npm install -g vuepress
-
 # Create a markdown file and write something
 echo '# Hello World' > docs/Hello.md
 

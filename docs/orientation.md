@@ -2,47 +2,51 @@
 
 Change the orientation of your image, by either flipping along its axes or rotating around the center.
 
-## Flip <Parameter text="&flip"/><Badge text="New!" type="warn" vertical="middle"/>
+## Flip <QueryString field="flip" bool="true" />
 
 Flip the image about the vertical Y axis. This always occurs after rotation, if any.
 
-<code-group>
-<code-block title="HTML" active>
+<CodeGroup>
+<CodeGroupItem title="HTML" active>
 ```html
 <img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300&flip">
 ```
-</code-block>
+</CodeGroupItem>
 
-<code-block title="Markdown">
+<CodeGroupItem title="Markdown">
 ```md
 ![Flip](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300&flip)
 ```
-</code-block>
-</code-group>
+</CodeGroupItem>
+</CodeGroup>
 
-[![Flip](/static/lichtenstein.jpg?h=300&flip)](/?url=images.weserv.nl/lichtenstein.jpg&h=300&flip)
+<a href="/?url=images.weserv.nl/lichtenstein.jpg&h=300&flip" target="_blank">
+  <img :src="$withBase('/static/lichtenstein.jpg?h=300&flip')" alt="Flip">
+</a>
 
-## Flop <Parameter text="&flop"/><Badge text="New!" type="warn" vertical="middle"/>
+## Flop <QueryString field="flop" bool="true" />
 
 Flop the image about the horizontal X axis. This always occurs after rotation, if any.
 
-<code-group>
-<code-block title="HTML" active>
+<CodeGroup>
+<CodeGroupItem title="HTML" active>
 ```html
 <img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300&flop">
 ```
-</code-block>
+</CodeGroupItem>
 
-<code-block title="Markdown">
+<CodeGroupItem title="Markdown">
 ```md
 ![Flop](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300&flop)
 ```
-</code-block>
-</code-group>
+</CodeGroupItem>
+</CodeGroup>
 
-[![Flop](/static/lichtenstein.jpg?h=300&flop)](/?url=images.weserv.nl/lichtenstein.jpg&h=300&flop)
+<a href="/?url=images.weserv.nl/lichtenstein.jpg&h=300&flop" target="_blank">
+  <img :src="$withBase('/static/lichtenstein.jpg?h=300&flop')" alt="Flop">
+</a>
 
-## Rotation <Parameter text="&ro="/>
+## Rotation <QueryString field="ro" />
 
 Rotates the image by either an explicit angle or auto-orient based on the EXIF `Orientation` tag.
 
@@ -52,18 +56,20 @@ color can be provided with the `&rbg=` parameter. See [here](adjustment.md#backg
 
 If no angle is provided, it is determined from the EXIF data.
 
-<code-group>
-<code-block title="HTML" active>
+<CodeGroup>
+<CodeGroupItem title="HTML" active>
 ```html
 <img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300&ro=45&rbg=red">
 ```
-</code-block>
+</CodeGroupItem>
 
-<code-block title="Markdown">
+<CodeGroupItem title="Markdown">
 ```md
 ![Rotation](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300&ro=45&rbg=red)
 ```
-</code-block>
-</code-group>
+</CodeGroupItem>
+</CodeGroup>
 
-[![Rotation](/static/lichtenstein.jpg?h=300&ro=45&rbg=red)](/?url=images.weserv.nl/lichtenstein.jpg&h=300&ro=45&rbg=red)
+<a href="/?url=images.weserv.nl/lichtenstein.jpg&h=300&ro=45&rbg=red" target="_blank">
+  <img :src="$withBase('/static/lichtenstein.jpg?h=300&ro=45&rbg=red')" alt="Rotation">
+</a>
