@@ -19,8 +19,8 @@
     "lint": "eslint .vitepress --fix --ext .js,.vue"
   },
   "devDependencies": {
-    "eslint": "^8.7.0",
-    "eslint-plugin-vue": "^8.3.0",
-    "vitepress": "^0.21.6"
+    "eslint": "^8.26.0",
+    "eslint-plugin-vue": "^9.7.0",
+    "vitepress": "^0.22.4"
   }
 }
