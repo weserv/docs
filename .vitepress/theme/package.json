@@ -1,7 +1,7 @@
 {
   "name": "@weserv/docs-theme",
   "version": "0.2.0",
-  "description": "Default theme for images.weserv.nl",
+  "description": "Default theme for wsrv.nl",
   "homepage": "https://github.com/weserv/docs#readme",
   "bugs": {
     "url": "https://github.com/weserv/images/issues"

@@ -14,8 +14,8 @@ head:
     - property: og:description
       content: Manipulate images on-the-fly with a worldwide cache
 heroImage: /logo.svg
-heroAlt: Images.weserv.nl
-heroText: Images.weserv.nl
+heroAlt: wsrv.nl
+heroText: wsrv.nl
 tagline: An image cache & resize service.<br/>Manipulate images on-the-fly with a worldwide cache.
 actionText: Read the documentation →
 actionLink: /docs/
@@ -25,10 +25,10 @@ features:
   details: Performance is not just an afterthought, we baked it in from the start!
 - title: Awesome Technology
   icon: la-cubes
-  details: Images.weserv.nl employs best-in-class technologies such as nginx and libvips.
+  details: wsrv.nl employs best-in-class technologies such as nginx and libvips.
 - title: Free / Open Source
   icon: la-money-bill-wave-alt
-  details: Images.weserv.nl is an open source project, so you can spend your money on other stuff.
+  details: wsrv.nl is an open source project, so you can spend your money on other stuff.
 ---
 
 ### Your images unchained

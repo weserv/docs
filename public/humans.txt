@@ -42,7 +42,7 @@
 
 /* SECURITY */
   Information:
-  https://images.weserv.nl/security.txt
+  https://wsrv.nl/security.txt
 
 /* BUGS */
   Found a bug? Open a new issue on GitHub:

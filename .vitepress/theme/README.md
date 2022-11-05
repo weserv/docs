@@ -1,4 +1,4 @@
 # @weserv/docs-theme
 
-Default theme for [images.weserv.nl](https://images.weserv.nl/).
+Default theme for [wsrv.nl](https://wsrv.nl/).
 

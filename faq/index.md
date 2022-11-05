@@ -1,7 +1,7 @@
 # FAQ
 
-## What is images.weserv.nl?
-Images.weserv.nl is an image service which is free for use to anyone, and we offer it as-is, it's just basic
+## What is wsrv.nl?
+wsrv.nl is an image service which is free for use to anyone, and we offer it as-is, it's just basic
 image resizing, available to anyone, easy to use. We try to keep everyone as happy as we can.
 
 ## What is this page? Where do I find my question?
@@ -19,7 +19,7 @@ scripts for image resizing. We gained experience with different user cases, and 
 main servers enabled us to use the latest and greatest software stack.
 
 ## How are you funded?
-Since 2011 images.weserv.nl is privately funded, and used as a testbed for new techniques in resizing,
+Since 2011 wsrv.nl is privately funded, and used as a testbed for new techniques in resizing,
 recognition and processing. Operating costs of the image service are very low. To prevent conflicts of
 interest, we never accepted any (financial) compensation or donation since we started, and we don't
 affiliate. Our intent is to keep the service running for many years to come.
@@ -47,7 +47,7 @@ instructions][weserv-docker] on using our source code with Docker.
 
 ## Can I sell your service?
 Sure, the [BSD 3-Clause license][weserv-license] permits you to use our code in your product, but please don't use our
-name in your marketing materials. Using the free service provided on images.weserv.nl in your products
+name in your marketing materials. Using the free service provided on wsrv.nl in your products
 is also permitted, but be reminded that our support is best-effort.
 
 If you really mean to sell our free service to other people as-is; I guess you're an amazing salesman, or
@@ -70,7 +70,7 @@ Wonderful, thanks for asking! Seriously, they provide awesome service, and are a
 
 ## What is your relationship with Cloudflare?
 We've started this service in 2007, use [Cloudflare](https://www.cloudflare.com/) since early 2012, and are on the free-tier since 2015.
-Costs for the servers to support images.weserv.nl are really low, and it serves as a great testbed for new
+Costs for the servers to support wsrv.nl are really low, and it serves as a great testbed for new
 technologies. Cloudflare is based on the same [principles to provide their services][cloudflare-cdn].
 
 ## Is there any SLA or uptime guarantee for your service?
@@ -164,8 +164,8 @@ We support animated WebP and GIF images through the use of [`&n=-1`][n-pages]. B
 each image is processed. We don't support APNG, since the official libpng reference implementation
 doesn't support this extension.
 
-## Can I use my own (sub)domain? E.g. by using a CNAME to images.weserv.nl?
-We offer this service only on the images.weserv.nl domain, and we offer it as-is. However, if you want to
+## Can I use my own (sub)domain? E.g. by using a CNAME to wsrv.nl?
+We offer this service only on the wsrv.nl domain, and we offer it as-is. However, if you want to
 use it under your own (sub)domain, please see our [GitHub][weserv-github] to use it on your own server(s).
 
 ## Why don't you support CNAME-ing?
@@ -246,7 +246,7 @@ advise to disable the use of it completely.
 
 If you want more information about the headers we serve, consider using [REDbot.org][redbot] this will explain
 every header we serve, and why this is used. We also serve Cache-Control: public, this allows browsers to
-cache things even when accessing images.weserv.nl over https://.
+cache things even when accessing wsrv.nl over https://.
 
 Let us know if you need more info. We are open for comments about the caching policies we use. We do
 run complete tests on server load, bandwidth, and CPU-cycles, for each header we place. Enabling 304

@@ -11,18 +11,18 @@ are less than or equal to both those specified.
 <CodeGroup>
 <CodeGroupItem title="HTML" active>
 ```html
-<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=inside">
+<img src="//wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&h=300&fit=inside">
 ```
 </CodeGroupItem>
 
 <CodeGroupItem title="Markdown">
 ```md
-![Inside](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=inside)
+![Inside](https://wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&h=300&fit=inside)
 ```
 </CodeGroupItem>
 </CodeGroup>
 
-<a href="/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=inside" target="_blank">
+<a href="/?url=wsrv.nl/lichtenstein.jpg&w=300&h=300&fit=inside" target="_blank">
   <img :src="$withBase('/static/lichtenstein.jpg?w=300&h=300&fit=inside')" alt="Inside">
 </a>
 
@@ -34,18 +34,18 @@ greater than or equal to both those specified.
 <CodeGroup>
 <CodeGroupItem title="HTML" active>
 ```html
-<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=outside">
+<img src="//wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&h=300&fit=outside">
 ```
 </CodeGroupItem>
 
 <CodeGroupItem title="Markdown">
 ```md
-![Outside](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=outside)
+![Outside](https://wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&h=300&fit=outside)
 ```
 </CodeGroupItem>
 </CodeGroup>
 
-<a href="/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=outside" target="_blank">
+<a href="/?url=wsrv.nl/lichtenstein.jpg&w=300&h=300&fit=outside" target="_blank">
   <img :src="$withBase('/static/lichtenstein.jpg?w=300&h=300&fit=outside')" alt="Outside">
 </a>
 
@@ -56,18 +56,18 @@ Crop the image to cover both provided dimensions.
 <CodeGroup>
 <CodeGroupItem title="HTML" active>
 ```html
-<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover">
+<img src="//wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&h=300&fit=cover">
 ```
 </CodeGroupItem>
 
 <CodeGroupItem title="Markdown">
 ```md
-![Cover](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover)
+![Cover](https://wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&h=300&fit=cover)
 ```
 </CodeGroupItem>
 </CodeGroup>
 
-<a href="/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover" target="_blank">
+<a href="/?url=wsrv.nl/lichtenstein.jpg&w=300&h=300&fit=cover" target="_blank">
   <img :src="$withBase('/static/lichtenstein.jpg?w=300&h=300&fit=cover')" alt="Cover">
 </a>
 
@@ -78,18 +78,18 @@ Ignore the aspect ratio of the input and stretch to both provided dimensions.
 <CodeGroup>
 <CodeGroupItem title="HTML" active>
 ```html
-<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=fill">
+<img src="//wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&h=300&fit=fill">
 ```
 </CodeGroupItem>
 
 <CodeGroupItem title="Markdown">
 ```md
-![Fill](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=fill)
+![Fill](https://wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&h=300&fit=fill)
 ```
 </CodeGroupItem>
 </CodeGroup>
 
-<a href="/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=fill" target="_blank">
+<a href="/?url=wsrv.nl/lichtenstein.jpg&w=300&h=300&fit=fill" target="_blank">
   <img :src="$withBase('/static/lichtenstein.jpg?w=300&h=300&fit=fill')" alt="Fill">
 </a>
 
@@ -103,18 +103,18 @@ More info: [Issue #80 - letterbox images that need to fit](https://github.com/we
 <CodeGroup>
 <CodeGroupItem title="HTML" active>
 ```html
-<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=contain&cbg=black">
+<img src="//wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&h=300&fit=contain&cbg=black">
 ```
 </CodeGroupItem>
 
 <CodeGroupItem title="Markdown">
 ```md
-![Contain](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=contain&cbg=black)
+![Contain](https://wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&h=300&fit=contain&cbg=black)
 ```
 </CodeGroupItem>
 </CodeGroup>
 
-<a href="/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=contain&cbg=black" target="_blank">
+<a href="/?url=wsrv.nl/lichtenstein.jpg&w=300&h=300&fit=contain&cbg=black" target="_blank">
   <img :src="$withBase('/static/lichtenstein.jpg?w=300&h=300&fit=contain&cbg=black')" alt="Contain">
 </a>
 
@@ -125,13 +125,13 @@ Do not enlarge if the width or height are already less than the specified dimens
 <CodeGroup>
 <CodeGroupItem title="HTML" active>
 ```html
-<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=inside&we">
+<img src="//wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&h=300&fit=inside&we">
 ```
 </CodeGroupItem>
 
 <CodeGroupItem title="Markdown">
 ```md
-![Without enlargement](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=inside&we)
+![Without enlargement](https://wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&h=300&fit=inside&we)
 ```
 </CodeGroupItem>
 </CodeGroup>

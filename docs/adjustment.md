@@ -19,18 +19,18 @@ More info: [Issue #81 - Background setting](https://github.com/weserv/images/iss
 <CodeGroup>
 <CodeGroupItem title="HTML" active>
 ```html
-<img src="//images.weserv.nl/?url=images.weserv.nl/transparency_demo.png&w=400&bg=black">
+<img src="//wsrv.nl/?url=wsrv.nl/transparency_demo.png&w=400&bg=black">
 ```
 </CodeGroupItem>
 
 <CodeGroupItem title="Markdown">
 ```md
-![Background](https://images.weserv.nl/?url=images.weserv.nl/transparency_demo.png&w=400&bg=black)
+![Background](https://wsrv.nl/?url=wsrv.nl/transparency_demo.png&w=400&bg=black)
 ```
 </CodeGroupItem>
 </CodeGroup>
 
-<a href="/?url=images.weserv.nl/transparency_demo.png&w=400&bg=black" target="_blank">
+<a href="/?url=wsrv.nl/transparency_demo.png&w=400&bg=black" target="_blank">
   <img :src="$withBase('/static/transparency_demo.png?w=400&bg=black')" alt="Background">
 </a>
 
@@ -47,18 +47,18 @@ More info: [Issue #69 - Allow blur transformation (with radius parameter)](https
 <CodeGroup>
 <CodeGroupItem title="HTML" active>
 ```html
-<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&blur=5">
+<img src="//wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&blur=5">
 ```
 </CodeGroupItem>
 
 <CodeGroupItem title="Markdown">
 ```md
-![Blur](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&blur=5)
+![Blur](https://wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&blur=5)
 ```
 </CodeGroupItem>
 </CodeGroup>
 
-<a href="/?url=images.weserv.nl/lichtenstein.jpg&w=300&blur=5" target="_blank">
+<a href="/?url=wsrv.nl/lichtenstein.jpg&w=300&blur=5" target="_blank">
   <img :src="$withBase('/static/lichtenstein.jpg?w=300&blur=5')" alt="Blur">
 </a>
 
@@ -69,18 +69,18 @@ Adjusts the image contrast. Use values between `-100` and `+100`, where `0` repr
 <CodeGroup>
 <CodeGroupItem title="HTML" active>
 ```html
-<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&con=25">
+<img src="//wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&con=25">
 ```
 </CodeGroupItem>
 
 <CodeGroupItem title="Markdown">
 ```md
-![Contrast](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&con=25)
+![Contrast](https://wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&con=25)
 ```
 </CodeGroupItem>
 </CodeGroup>
 
-<a href="/?url=images.weserv.nl/lichtenstein.jpg&w=300&con=25" target="_blank">
+<a href="/?url=wsrv.nl/lichtenstein.jpg&w=300&con=25" target="_blank">
   <img :src="$withBase('/static/lichtenstein.jpg?w=300&con=25')" alt="Contrast">
 </a>
 
@@ -97,18 +97,18 @@ You can use `&start` and `&stop` to define the duotone colors. By default, it wi
 <CodeGroup>
 <CodeGroupItem title="HTML" active>
 ```html
-<img src="//images.weserv.nl/?url=images.weserv.nl/zebra.jpg&w=300&h=300&fit=cover&a=focal&fpx=0.6&filt=duotone">
+<img src="//wsrv.nl/?url=wsrv.nl/zebra.jpg&w=300&h=300&fit=cover&a=focal&fpx=0.6&filt=duotone">
 ```
 </CodeGroupItem>
 
 <CodeGroupItem title="Markdown">
 ```md
-![Filter](https://images.weserv.nl/?url=images.weserv.nl/zebra.jpg&w=300&h=300&fit=cover&a=focal&fpx=0.6&filt=duotone)
+![Filter](https://wsrv.nl/?url=wsrv.nl/zebra.jpg&w=300&h=300&fit=cover&a=focal&fpx=0.6&filt=duotone)
 ```
 </CodeGroupItem>
 </CodeGroup>
 
-<a href="/?url=images.weserv.nl/zebra.jpg&w=300&h=300&fit=cover&a=focal&fpx=0.6&filt=duotone" target="_blank">
+<a href="/?url=wsrv.nl/zebra.jpg&w=300&h=300&fit=cover&a=focal&fpx=0.6&filt=duotone" target="_blank">
   <img :src="$withBase('/static/zebra.jpg?w=300&h=300&fit=cover&a=focal&fpx=0.6&filt=duotone')" alt="Filter">
 </a>
 
@@ -120,18 +120,18 @@ approximation for sRGB images.
 <CodeGroup>
 <CodeGroupItem title="HTML" active>
 ```html
-<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&gam=3">
+<img src="//wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&gam=3">
 ```
 </CodeGroupItem>
 
 <CodeGroupItem title="Markdown">
 ```md
-![Gamma](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&gam=3)
+![Gamma](https://wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&gam=3)
 ```
 </CodeGroupItem>
 </CodeGroup>
 
-<a href="/?url=images.weserv.nl/lichtenstein.jpg&w=300&gam=3" target="_blank">
+<a href="/?url=wsrv.nl/lichtenstein.jpg&w=300&gam=3" target="_blank">
   <img :src="$withBase('/static/lichtenstein.jpg?w=300&gam=3')" alt="Gamma">
 </a>
 
@@ -148,18 +148,18 @@ multiplier less than 1 will decrease the brightness.
 <CodeGroup>
 <CodeGroupItem title="HTML" active>
 ```html
-<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&mod=2">
+<img src="//wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&mod=2">
 ```
 </CodeGroupItem>
 
 <CodeGroupItem title="Markdown">
 ```md
-![Brightness](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&mod=2)
+![Brightness](https://wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&mod=2)
 ```
 </CodeGroupItem>
 </CodeGroup>
 
-<a href="/?url=images.weserv.nl/lichtenstein.jpg&w=300&mod=2" target="_blank">
+<a href="/?url=wsrv.nl/lichtenstein.jpg&w=300&mod=2" target="_blank">
   <img :src="$withBase('/static/lichtenstein.jpg?w=300&mod=2')" alt="Brightness">
 </a>
 
@@ -171,18 +171,18 @@ less than 1 will decrease the saturation.
 <CodeGroup>
 <CodeGroupItem title="HTML" active>
 ```html
-<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&sat=0.5">
+<img src="//wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&sat=0.5">
 ```
 </CodeGroupItem>
 
 <CodeGroupItem title="Markdown">
 ```md
-![Saturation](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&sat=0.5)
+![Saturation](https://wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&sat=0.5)
 ```
 </CodeGroupItem>
 </CodeGroup>
 
-<a href="/?url=images.weserv.nl/lichtenstein.jpg&w=300&sat=0.5" target="_blank">
+<a href="/?url=wsrv.nl/lichtenstein.jpg&w=300&sat=0.5" target="_blank">
   <img :src="$withBase('/static/lichtenstein.jpg?w=300&sat=0.5')" alt="Saturation">
 </a>
 
@@ -197,18 +197,18 @@ Values are given in degrees, there is no minimum or maximum value; `&hue=N` eval
 <CodeGroup>
 <CodeGroupItem title="HTML" active>
 ```html
-<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&hue=90">
+<img src="//wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&hue=90">
 ```
 </CodeGroupItem>
 
 <CodeGroupItem title="Markdown">
 ```md
-![Hue rotation](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&hue=90)
+![Hue rotation](https://wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&hue=90)
 ```
 </CodeGroupItem>
 </CodeGroup>
 
-<a href="/?url=images.weserv.nl/lichtenstein.jpg&w=300&hue=90" target="_blank">
+<a href="/?url=wsrv.nl/lichtenstein.jpg&w=300&hue=90" target="_blank">
   <img :src="$withBase('/static/lichtenstein.jpg?w=300&hue=90')" alt="Hue rotation">
 </a>
 
@@ -220,18 +220,18 @@ Sharpen the image. Performs an accurate sharpen of the L channel in the LAB colo
 <CodeGroup>
 <CodeGroupItem title="HTML" active>
 ```html
-<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&sharp=3">
+<img src="//wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&sharp=3">
 ```
 </CodeGroupItem>
 
 <CodeGroupItem title="Markdown">
 ```md
-![Sharpen](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&sharp=3)
+![Sharpen](https://wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&sharp=3)
 ```
 </CodeGroupItem>
 </CodeGroup>
 
-<a href="/?url=images.weserv.nl/lichtenstein.jpg&w=300&sharp=3" target="_blank">
+<a href="/?url=wsrv.nl/lichtenstein.jpg&w=300&sharp=3" target="_blank">
   <img :src="$withBase('/static/lichtenstein.jpg?w=300&sharp=3')" alt="Sharpen">
 </a>
 
@@ -243,17 +243,17 @@ for the supported color formats.
 <CodeGroup>
 <CodeGroupItem title="HTML" active>
 ```html
-<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&tint=red">
+<img src="//wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&tint=red">
 ```
 </CodeGroupItem>
 
 <CodeGroupItem title="Markdown">
 ```md
-![Tint](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&tint=red)
+![Tint](https://wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&tint=red)
 ```
 </CodeGroupItem>
 </CodeGroup>
 
-<a href="/?url=images.weserv.nl/lichtenstein.jpg&w=300&tint=red" target="_blank">
+<a href="/?url=wsrv.nl/lichtenstein.jpg&w=300&tint=red" target="_blank">
   <img :src="$withBase('/static/lichtenstein.jpg?w=300&tint=red')" alt="Tint">
 </a>

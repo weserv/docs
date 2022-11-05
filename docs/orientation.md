@@ -9,18 +9,18 @@ Flip the image about the vertical Y axis. This always occurs after rotation, if 
 <CodeGroup>
 <CodeGroupItem title="HTML" active>
 ```html
-<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300&flip">
+<img src="//wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&h=300&flip">
 ```
 </CodeGroupItem>
 
 <CodeGroupItem title="Markdown">
 ```md
-![Flip](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300&flip)
+![Flip](https://wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&h=300&flip)
 ```
 </CodeGroupItem>
 </CodeGroup>
 
-<a href="/?url=images.weserv.nl/lichtenstein.jpg&h=300&flip" target="_blank">
+<a href="/?url=wsrv.nl/lichtenstein.jpg&h=300&flip" target="_blank">
   <img :src="$withBase('/static/lichtenstein.jpg?h=300&flip')" alt="Flip">
 </a>
 
@@ -31,18 +31,18 @@ Flop the image about the horizontal X axis. This always occurs after rotation, i
 <CodeGroup>
 <CodeGroupItem title="HTML" active>
 ```html
-<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300&flop">
+<img src="//wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&h=300&flop">
 ```
 </CodeGroupItem>
 
 <CodeGroupItem title="Markdown">
 ```md
-![Flop](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300&flop)
+![Flop](https://wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&h=300&flop)
 ```
 </CodeGroupItem>
 </CodeGroup>
 
-<a href="/?url=images.weserv.nl/lichtenstein.jpg&h=300&flop" target="_blank">
+<a href="/?url=wsrv.nl/lichtenstein.jpg&h=300&flop" target="_blank">
   <img :src="$withBase('/static/lichtenstein.jpg?h=300&flop')" alt="Flop">
 </a>
 
@@ -59,17 +59,17 @@ If no angle is provided, it is determined from the EXIF data.
 <CodeGroup>
 <CodeGroupItem title="HTML" active>
 ```html
-<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300&ro=45&rbg=red">
+<img src="//wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&h=300&ro=45&rbg=red">
 ```
 </CodeGroupItem>
 
 <CodeGroupItem title="Markdown">
 ```md
-![Rotation](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300&ro=45&rbg=red)
+![Rotation](https://wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&h=300&ro=45&rbg=red)
 ```
 </CodeGroupItem>
 </CodeGroup>
 
-<a href="/?url=images.weserv.nl/lichtenstein.jpg&h=300&ro=45&rbg=red" target="_blank">
+<a href="/?url=wsrv.nl/lichtenstein.jpg&h=300&ro=45&rbg=red" target="_blank">
   <img :src="$withBase('/static/lichtenstein.jpg?h=300&ro=45&rbg=red')" alt="Rotation">
 </a>

@@ -23,18 +23,18 @@ More info: [Issue #49 - Add circle effect to photos](https://github.com/weserv/i
 <CodeGroup>
 <CodeGroupItem title="HTML" active>
 ```html
-<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover&mask=circle">
+<img src="//wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&h=300&fit=cover&mask=circle">
 ```
 </CodeGroupItem>
 
 <CodeGroupItem title="Markdown">
 ```md
-![Mask type](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover&mask=circle)
+![Mask type](https://wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&h=300&fit=cover&mask=circle)
 ```
 </CodeGroupItem>
 </CodeGroup>
 
-<a href="/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=300&fit=cover&mask=circle" target="_blank">
+<a href="/?url=wsrv.nl/lichtenstein.jpg&w=300&h=300&fit=cover&mask=circle" target="_blank">
   <img :src="$withBase('/static/lichtenstein.jpg?w=300&h=300&fit=cover&mask=circle')" alt="Mask type">
 </a>
 
@@ -45,18 +45,18 @@ Removes the remaining whitespace from the mask.
 <CodeGroup>
 <CodeGroupItem title="HTML" active>
 ```html
-<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=900&fit=cover&a=crop-22-0&mask=circle&mtrim">
+<img src="//wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&h=900&fit=cover&a=crop-22-0&mask=circle&mtrim">
 ```
 </CodeGroupItem>
 
 <CodeGroupItem title="Markdown">
 ```md
-![Mask trim](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=900&fit=cover&a=crop-22-0&mask=circle&mtrim)
+![Mask trim](https://wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&h=900&fit=cover&a=crop-22-0&mask=circle&mtrim)
 ```
 </CodeGroupItem>
 </CodeGroup>
 
-<a href="/?url=images.weserv.nl/lichtenstein.jpg&w=300&h=900&fit=cover&a=crop-22-0&mask=circle&mtrim" target="_blank">
+<a href="/?url=wsrv.nl/lichtenstein.jpg&w=300&h=900&fit=cover&a=crop-22-0&mask=circle&mtrim" target="_blank">
   <img :src="$withBase('/static/lichtenstein.jpg?w=300&h=900&fit=cover&a=crop-22-0&mask=circle&mtrim')" alt="Mask trim">
 </a>
 
@@ -67,17 +67,17 @@ Sets the background color of the mask. See [here](adjustment.md#background) for 
 <CodeGroup>
 <CodeGroupItem title="HTML" active>
 ```html
-<img src="//images.weserv.nl/?url=images.weserv.nl/transparency_demo.png&w=400&bg=black&mask=heart&mbg=red">
+<img src="//wsrv.nl/?url=wsrv.nl/transparency_demo.png&w=400&bg=black&mask=heart&mbg=red">
 ```
 </CodeGroupItem>
 
 <CodeGroupItem title="Markdown">
 ```md
-![Mask background](https://images.weserv.nl/?url=images.weserv.nl/transparency_demo.png&w=400&bg=black&mask=heart&mbg=red)
+![Mask background](https://wsrv.nl/?url=wsrv.nl/transparency_demo.png&w=400&bg=black&mask=heart&mbg=red)
 ```
 </CodeGroupItem>
 </CodeGroup>
 
-<a href="/?url=images.weserv.nl/transparency_demo.png&w=400&bg=black&mask=heart&mbg=red" target="_blank">
+<a href="/?url=wsrv.nl/transparency_demo.png&w=400&bg=black&mask=heart&mbg=red" target="_blank">
   <img :src="$withBase('/static/transparency_demo.png?w=400&bg=black&mask=heart&mbg=red')" alt="Mask background">
 </a>

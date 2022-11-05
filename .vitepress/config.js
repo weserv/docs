@@ -1,6 +1,6 @@
 module.exports = {
   lang: 'en-US',
-  title: 'Images.weserv.nl',
+  title: 'wsrv.nl',
   description: 'Image cache &amp; resize service',
   head: [
     ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' }],

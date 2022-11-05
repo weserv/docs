@@ -39,7 +39,7 @@ in 130 lines of C, without external dependencies.
 
 An additional feature of this module is that it's easy to check your current rate limit quota:
 ```bash
-$ curl -i https://images.weserv.nl/quota
+$ curl -i https://wsrv.nl/quota
 HTTP/1.1 200 OK
 Date: Sun, 01 Sep 2019 00:00:00 GMT
 X-RateLimit-Limit: 2500
@@ -62,18 +62,18 @@ Thanks to [libvips 8.8][libvips-8.8], we've now enabled support for [animated We
 <CodeGroup>
 <CodeGroupItem title="HTML" active>
 ```html
-<img src="//images.weserv.nl/?url=images.weserv.nl/banana.webp&h=300&output=gif&n=-1">
+<img src="//wsrv.nl/?url=wsrv.nl/banana.webp&h=300&output=gif&n=-1">
 ```
 </CodeGroupItem>
 
 <CodeGroupItem title="Markdown">
 ```md
-![Animated image](https://images.weserv.nl/?url=images.weserv.nl/banana.webp&h=300&output=gif&n=-1)
+![Animated image](https://wsrv.nl/?url=wsrv.nl/banana.webp&h=300&output=gif&n=-1)
 ```
 </CodeGroupItem>
 </CodeGroup>
 
-<a href="/?url=images.weserv.nl/banana.webp&h=300&output=gif&n=-1" target="_blank">
+<a href="/?url=wsrv.nl/banana.webp&h=300&output=gif&n=-1" target="_blank">
   <img :src="$withBase('/static/banana.webp?h=300&output=gif&n=-1')" alt="Animated image">
 </a>
 
@@ -112,18 +112,18 @@ while preserving the image luminance.
 <CodeGroup>
 <CodeGroupItem title="HTML" active>
 ```html
-<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&tint=red">
+<img src="//wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&tint=red">
 ```
 </CodeGroupItem>
 
 <CodeGroupItem title="Markdown">
 ```md
-![Tint](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300&tint=red)
+![Tint](https://wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&tint=red)
 ```
 </CodeGroupItem>
 </CodeGroup>
 
-<a href="/?url=images.weserv.nl/lichtenstein.jpg&w=300&tint=red" target="_blank">
+<a href="/?url=wsrv.nl/lichtenstein.jpg&w=300&tint=red" target="_blank">
   <img :src="$withBase('/static/lichtenstein.jpg?w=300&tint=red')" alt="Tint">
 </a>
 
@@ -135,18 +135,18 @@ parameter has been renamed to [`&ro=`][rotation].
 <CodeGroup>
 <CodeGroupItem title="HTML" active>
 ```html
-<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300&ro=45">
+<img src="//wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&h=300&ro=45">
 ```
 </CodeGroupItem>
 
 <CodeGroupItem title="Markdown">
 ```md
-![Rotation](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300&ro=45)
+![Rotation](https://wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&h=300&ro=45)
 ```
 </CodeGroupItem>
 </CodeGroup>
 
-<a href="/?url=images.weserv.nl/lichtenstein.jpg&h=300&ro=45" target="_blank">
+<a href="/?url=wsrv.nl/lichtenstein.jpg&h=300&ro=45" target="_blank">
   <img :src="$withBase('/static/lichtenstein.jpg?h=300&ro=45')" alt="Rotation">
 </a>
 
@@ -156,7 +156,7 @@ parameters named [`&af`][adaptive-filter] and [`&l`][compression-level].
 
 ## Metadata output
 To quickly view the metadata of an image, we've added support for [`&output=json`][output].
-See [here](/?url=images.weserv.nl/zebra.jpg&output=json) for an example.
+See [here](/?url=wsrv.nl/zebra.jpg&output=json) for an example.
 
 ## Flip / flop an image
 We've added support for flipping an image [horizontally][flop] or [vertically][flip]. You can combine these parameters

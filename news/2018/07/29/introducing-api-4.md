@@ -21,7 +21,7 @@ and that our code can be written directly inside Nginx without using PHP-FPM and
 just-in-time (JIT) compilation and the integrated foreign function interface (FFI) in LuaJIT have also been
 motives to move away from PHP.
 
-Perhaps you've already noticed, [https://images.weserv.nl/](/) already states that API version 4 is
+Perhaps you've already noticed, [https://wsrv.nl/](/) already states that API version 4 is
 running. This is not a mistake, our A/B testing went so well that we decided (on time of writing) to
 forward all traffic to API version 4.
 

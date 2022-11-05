@@ -1,6 +1,6 @@
 # weserv/docs
 
-Documentation for [images.weserv.nl](https://images.weserv.nl/).
+Documentation for [wsrv.nl](https://wsrv.nl/).
 
 ## Built with
 

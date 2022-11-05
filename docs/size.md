@@ -10,18 +10,18 @@ Sets the width of the image, in pixels.
 <CodeGroup>
 <CodeGroupItem title="HTML" active>
 ```html
-<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300">
+<img src="//wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300">
 ```
 </CodeGroupItem>
 
 <CodeGroupItem title="Markdown">
 ```md
-![Width](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&w=300)
+![Width](https://wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300)
 ```
 </CodeGroupItem>
 </CodeGroup>
 
-<a href="/?url=images.weserv.nl/lichtenstein.jpg&w=300" target="_blank">
+<a href="/?url=wsrv.nl/lichtenstein.jpg&w=300" target="_blank">
   <img :src="$withBase('/static/lichtenstein.jpg?w=300')" alt="Width">
 </a>
 
@@ -32,18 +32,18 @@ Sets the height of the image, in pixels.
 <CodeGroup>
 <CodeGroupItem title="HTML" active>
 ```html
-<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300">
+<img src="//wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&h=300">
 ```
 </CodeGroupItem>
 
 <CodeGroupItem title="Markdown">
 ```md
-![Height](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=300)
+![Height](https://wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&h=300)
 ```
 </CodeGroupItem>
 </CodeGroup>
 
-<a href="/?url=images.weserv.nl/lichtenstein.jpg&h=300" target="_blank">
+<a href="/?url=wsrv.nl/lichtenstein.jpg&h=300" target="_blank">
   <img :src="$withBase('/static/lichtenstein.jpg?h=300')" alt="Height">
 </a>
 
@@ -59,17 +59,17 @@ More info: [Issue #115 - DPI support](https://github.com/weserv/images/issues/11
 <CodeGroup>
 <CodeGroupItem title="HTML" active>
 ```html
-<img src="//images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=144&dpr=2">
+<img src="//wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&h=144&dpr=2">
 ```
 </CodeGroupItem>
 
 <CodeGroupItem title="Markdown">
 ```md
-![Device pixel ratio](https://images.weserv.nl/?url=images.weserv.nl/lichtenstein.jpg&h=144&dpr=2)
+![Device pixel ratio](https://wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&h=144&dpr=2)
 ```
 </CodeGroupItem>
 </CodeGroup>
 
-<a href="/?url=images.weserv.nl/lichtenstein.jpg&h=144&dpr=2" target="_blank">
+<a href="/?url=wsrv.nl/lichtenstein.jpg&h=144&dpr=2" target="_blank">
   <img :src="$withBase('/static/lichtenstein.jpg?h=144&dpr=2')" alt="Device pixel ratio">
 </a>
