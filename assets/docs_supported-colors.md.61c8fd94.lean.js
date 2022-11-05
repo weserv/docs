@@ -1,1 +1,0 @@
-import{_ as t,c as d,o as r,e}from"./app.4636778c.js";const y='{"title":"Supported colors","description":"","frontmatter":{},"headers":[],"relativePath":"docs/supported-colors.md","lastUpdated":1641115504438}',a={},l=e("",2),o=[l];function n(s,u,c,g,b,F){return r(),d("div",null,o)}var i=t(a,[["render",n]]);export{y as __pageData,i as default};

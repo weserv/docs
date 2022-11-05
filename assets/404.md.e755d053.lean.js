@@ -1,1 +1,0 @@
-import{_ as e,c as o,a,r as n,o as r}from"./app.4636778c.js";const m='{"title":"Not found","description":"","frontmatter":{"title":"Not found","editLink":false},"headers":[],"relativePath":"404.md","lastUpdated":1643219678653}',s={};function c(d,p,_,i,l,f){const t=n("NotFound");return r(),o("div",null,[a(t)])}var N=e(s,[["render",c]]);export{m as __pageData,N as default};
