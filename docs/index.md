@@ -21,7 +21,7 @@ cache it and display it. The next time the request comes, it will serve the cach
 <CodeGroupItem title="HTML" active>
 ```html
 <!-- wsrv.nl/lichtenstein.jpg -->
-<img src="//wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&h=300">
+<img src="//wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&h=300"/>
 ```
 </CodeGroupItem>
 
