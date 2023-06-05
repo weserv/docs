@@ -21,14 +21,14 @@ cache it and display it. The next time the request comes, it will serve the cach
 <CodeGroupItem title="HTML" active>
 ```html
 <!-- wsrv.nl/lichtenstein.jpg -->
-<img src="//wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&h=300">
+<img src="//wsrv.nl/?url=https://i.imour.com/gwig1mr.png&w=300&h=300">
 ```
 </CodeGroupItem>
 
 <CodeGroupItem title="Markdown">
 ```md
 <!--- wsrv.nl/lichtenstein.jpg --->
-![Lichtenstein](https://wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&h=300)
+![Lichtenstein](https://wsrv.nl/?url=https://i.imour.com/gwig1mr.png&w=300&h=300)
 ```
 </CodeGroupItem>
 </CodeGroup>
