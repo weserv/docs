@@ -5,6 +5,7 @@ editLink: false
 # Introducing API version 5
 
 ## Introduction
+
 We've just released API version 5, which contains many enhancements and new features. Since the
 introduction of [API version 4][version-4-post], our website traffic has tripled. Nowadays we handle 6 million requests per
 hour. It's an accomplishment that we're very proud of, handling such large amounts of traffic is a great
@@ -16,6 +17,7 @@ work on API 5. The source code is available on the [5.x branch][5.x-branch], thi
 the future.
 
 ## LuaJIT → C++
+
 With API version 5 we've rewritten the entire codebase to C++ as a nginx module. The reason for this
 rewrite is to tighten the control over memory allocation. We found out that the current garbage collector
 (GC) in LuaJIT 2, which is essentially the same as the one in vanilla Lua 5.1, is not very fast for large
@@ -26,19 +28,22 @@ doubtful whether anyone will fill his shoes. The new C++ codebase ensures that w
 service for many years to come.
 
 ## Revamped front-end
+
 The old single index page had to be improved. We've completely revamped the front-end using
 [VuePress][vuepress], which allows us to write the documentation as regular Markdown files.
 
 The documentation is available in our [weserv/docs][weserv-docs] GitHub repository.
 
 ## Improved rate limiter
+
 We have improved our [basic Redis rate limiter](https://redis.io/commands/incr#pattern-rate-limiter-2). Our new rate limiter is written in C and runs inside a
 Redis backed nginx module. The implementation is based on the [onsigntv/redis-rate-limiter][onsigntv/redis-rate-limiter] module,
 which offers a straightforward implementation of the fairly sophisticated [generic cell rate algorithm][gcra],
 in 130 lines of C, without external dependencies.
 
 An additional feature of this module is that it's easy to check your current rate limit quota:
-```bash
+
+```console
 $ curl -i https://wsrv.nl/quota
 HTTP/1.1 200 OK
 Date: Sun, 01 Sep 2019 00:00:00 GMT
@@ -57,27 +62,25 @@ your rate limit.
 The source code of the rate limiter can be viewed on GitHub: [weserv/rate-limit-nginx-module][rate-limit-nginx-module].
 
 ## Support for animated images
+
 Thanks to [libvips 8.8][libvips-8.8], we've now enabled support for [animated WebP and GIF images][n-pages].
 
-<CodeGroup>
-<CodeGroupItem title="HTML" active>
-```html
+::: code-group
+
+```html [HTML]
 <img src="//wsrv.nl/?url=wsrv.nl/banana.webp&h=300&output=gif&n=-1">
 ```
-</CodeGroupItem>
 
-<CodeGroupItem title="Markdown">
-```md
+```md [Markdown]
 ![Animated image](https://wsrv.nl/?url=wsrv.nl/banana.webp&h=300&output=gif&n=-1)
 ```
-</CodeGroupItem>
-</CodeGroup>
 
-<a href="/?url=wsrv.nl/banana.webp&h=300&output=gif&n=-1" target="_blank">
-  <img :src="$withBase('/static/banana.webp?h=300&output=gif&n=-1')" alt="Animated image">
-</a>
+:::
+
+[![Animated image](/static/banana.webp?h=300&output=gif&n=-1)](/?url=wsrv.nl/banana.webp&h=300&output=gif&n=-1){target="_blank"}
 
 ## Support for loading HEIC images
+
 We've added support for loading HEIC-images. This is the new image compression standard being used by
 Apple and others. HEIC files are typically half the size of JPEG files at similar quality.
 
@@ -87,13 +90,14 @@ encoding formats such as [AVIF][avif] will become more widely used in the future
 :::
 
 ## CSS-inspired fit parameters
+
 We've deprecated the confusing fit (`&t=`) parameters (`fit`, `fitup`, `square`, `squaredown`, `absolute`
 and `letterbox`) and aligned it with the CSS terminology.
 
 Here's a handy table to help users migrating to these new CSS-inspired parameters:
 
 | Before          | After                          |
-| ----------------|--------------------------------|
+| --------------- | ------------------------------ |
 | `&t=fit`        | [`&fit=inside&we`][fit-inside] |
 | `&t=fitup`      | [`&fit=inside`][fit-inside]    |
 | `&t=square`     | [`&fit=cover`][fit-cover]      |
@@ -106,68 +110,67 @@ parameters. We also introduced a new parameter named [`&fit=outside`][fit-outsid
 be as small as possible while ensuring its dimensions are greater than or equal to both those specified.
 
 ## Tinting images
+
 We introduced a new parameter named [`&tint`][tint] to tint an image using the provided chroma
 while preserving the image luminance.
 
-<CodeGroup>
-<CodeGroupItem title="HTML" active>
-```html
+::: code-group
+
+```html [HTML]
 <img src="//wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&tint=red">
 ```
-</CodeGroupItem>
 
-<CodeGroupItem title="Markdown">
-```md
+```md [Markdown]
 ![Tint](https://wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&w=300&tint=red)
 ```
-</CodeGroupItem>
-</CodeGroup>
 
-<a href="/?url=wsrv.nl/lichtenstein.jpg&w=300&tint=red" target="_blank">
-  <img :src="$withBase('/static/lichtenstein.jpg?w=300&tint=red')" alt="Tint">
-</a>
+:::
+
+[![Tint](/static/lichtenstein.jpg?w=300&tint=red)](/?url=wsrv.nl/lichtenstein.jpg&w=300&tint=red){target="_blank"}
 
 ## Arbitrary rotation angles
+
 Instead of only being able to rotate multiples of 90 degrees, any angle can now be given. The remaining
 space can be filled with a background color by using `&rbg=`. To reflect this change, the `&or=`
 parameter has been renamed to [`&ro=`][rotation].
 
-<CodeGroup>
-<CodeGroupItem title="HTML" active>
-```html
+::: code-group
+
+```html [HTML]
 <img src="//wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&h=300&ro=45">
 ```
-</CodeGroupItem>
 
-<CodeGroupItem title="Markdown">
-```md
+```md [Markdown]
 ![Rotation](https://wsrv.nl/?url=wsrv.nl/lichtenstein.jpg&h=300&ro=45)
 ```
-</CodeGroupItem>
-</CodeGroup>
 
-<a href="/?url=wsrv.nl/lichtenstein.jpg&h=300&ro=45" target="_blank">
-  <img :src="$withBase('/static/lichtenstein.jpg?h=300&ro=45')" alt="Rotation">
-</a>
+:::
+
+[![Rotation](/static/lichtenstein.jpg?h=300&ro=45)](/?url=wsrv.nl/lichtenstein.jpg&h=300&ro=45){target="_blank"}
 
 ## Adaptive filter and compression level
+
 To minimize the size of PNG images and thus reduce their load time we've introduced some new
 parameters named [`&af`][adaptive-filter] and [`&l`][compression-level].
 
 ## Metadata output
+
 To quickly view the metadata of an image, we've added support for [`&output=json`][output].
-See [here](/?url=wsrv.nl/zebra.jpg&output=json) for an example.
+See [here](/?url=wsrv.nl/zebra.jpg&output=json){target="_blank"} for an example.
 
 ## Flip / flop an image
+
 We've added support for flipping an image [horizontally][flop] or [vertically][flip]. You can combine these parameters
 to flip along both axes.
 
 ## JSON for error messages
+
 Instead of returning our error messages as plain text, you'll now receive a JSON-formatted response with
 the appropriate `application/json` MIME-type. This makes it easier to integrate our service into any
 type of website or application.
 
 ## Other improvements
+
 - Improve Docker image and deployment ([#180](https://github.com/weserv/images/issues/180)).
 - A pre-resize crop behaviour ([`&precrop`][rectangle-crop] - [#176](https://github.com/weserv/images/issues/176)).
 - Letterboxing without oversampling ([`&fit=contain&we`][without-enlargement] - [#173](https://github.com/weserv/images/issues/173)).
@@ -186,12 +189,12 @@ type of website or application.
 [vuepress]: https://vuepress.vuejs.org/
 [weserv-docs]: https://github.com/weserv/docs
 [5.x-branch]: https://github.com/weserv/images/tree/5.x
-[luajit-new-gc]: http://wiki.luajit.org/New-Garbage-Collector
+[luajit-new-gc]: https://web.archive.org/web/20220826233802/http://wiki.luajit.org/New-Garbage-Collector
 [luajit-maintenance]: https://www.freelists.org/post/luajit/Looking-for-new-LuaJIT-maintainers
 [onsigntv/redis-rate-limiter]: https://github.com/onsigntv/redis-rate-limiter
 [gcra]: https://en.wikipedia.org/wiki/Generic_cell_rate_algorithm
 [rate-limit-nginx-module]: https://github.com/weserv/rate-limit-nginx-module
-[libvips-8.8]: https://libvips.github.io/libvips/2019/04/22/What's-new-in-8.8.html
+[libvips-8.8]: https://www.libvips.org/2019/04/22/What's-new-in-8.8.html
 [n-pages]: /docs/format.md#number-of-pages
 [avif]: https://aomediacodec.github.io/av1-avif/
 [fit]: /docs/fit.md

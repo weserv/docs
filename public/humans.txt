@@ -19,7 +19,7 @@
 
 /* ABOUT THIS FILE */
   Description: We Are People, Not Machines
-  More information: http://humanstxt.org/
+  More information: https://humanstxt.org/
 
 /* TEAM */
   Administrator: Andries Louw Wolthuizen

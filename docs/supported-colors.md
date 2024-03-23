@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # Supported colors
 
 <table style="display: table; width:100%; max-width:100%;">

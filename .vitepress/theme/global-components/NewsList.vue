@@ -1,12 +1,13 @@
-<script setup>
-import { useData, withBase } from 'vitepress'
-const { frontmatter } = useData()
+<script setup lang="ts">
+import { useData, withBase } from 'vitepress';
+
+const { frontmatter: fm } = useData();
 </script>
 
 <template>
   <div class="news">
     <ul>
-      <li class="item" v-for="(page, index) in frontmatter.news" :key="index">
+      <li class="item" v-for="(page, index) in fm.news" :key="index">
         <span class="item-date">{{ new Date(page.date).toDateString() }}</span>
         <h2 class="item-title">
           <a :href="withBase(page.link)" :title="page.title">
@@ -26,11 +27,10 @@ const { frontmatter } = useData()
   list-style: none;
 }
 .item-title {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
   font-weight: 300;
 }
 .item-date {
+  padding-top: 24px;
   float: right;
   font-size: small;
 }

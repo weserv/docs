@@ -13,7 +13,8 @@
   },
   "license": "MIT",
   "author": "Kleis Auke Wolthuizen",
-  "main": "index.js",
+  "type": "module",
+  "main": "index.ts",
   "devDependencies": {
     "line-awesome": "^1.3.0"
   }

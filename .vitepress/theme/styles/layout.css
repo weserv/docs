@@ -1,10 +1,67 @@
 .logo {
   height: 2.2rem !important;
-  vertical-align: middle !important;
 }
 
-@media (min-width: 751px) and (max-width: 840px) {
-  .nav-bar-title {
-    font-size: 0 !important;
+.icon {
+  justify-content: left !important;
+  background-color: var(--vp-c-bg-soft) !important;
+  width: auto !important;
+  height: auto !important;
+  font-size: 112px !important;
+  transition: none !important;
+}
+
+.cloudflare-logo {
+  padding: 15px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -20px -24px;
+}
+
+.feature {
+  flex-shrink: 0;
+  padding: 20px 15px;
+  width: 100%;
+  text-align: center;
+  margin: 40px auto;
+}
+
+.feature a {
+  display: block;
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+}
+
+.feature i {
+  position: relative;
+  margin: 0 auto;
+  font-size: 5rem;
+  color: var(--vp-c-text-1);
+}
+
+.feature:hover,
+.feature:hover i,
+.feature:hover a {
+  color: var(--vp-c-brand-1);
+}
+
+@media (min-width: 420px) {
+  .feature {
+    width: calc(100% / 2);
+  }
+}
+
+@media (max-width: 420px) {
+  .cloudflare-logo {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .feature {
+    width: calc(100% / 4);
   }
 }

@@ -16,3 +16,6 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
+
+# VitePress
+.vitepress/cache
