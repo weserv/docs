@@ -22,6 +22,6 @@
   },
   "devDependencies": {
     "prettier": "^3.2.5",
-    "vitepress": "^1.0.1"
+    "vitepress": "^1.2.2"
   }
 }

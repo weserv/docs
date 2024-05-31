@@ -1,8 +1,6 @@
-import { defineConfig } from 'vitepress';
-
 const version = 5;
 
-export default defineConfig({
+export default {
   lang: 'en-US',
   title: 'wsrv.nl',
   description: 'Image cache &amp; resize service',
@@ -100,4 +98,4 @@ export default defineConfig({
     }
   },
   outDir: 'dist'
-});
+}
