@@ -308,10 +308,10 @@ your question by featuring it on this page!
 [ip-list]: /ips.txt
 [cloudflare]: https://www.cloudflare.com/
 [cloudflare-cdn]: https://www.cloudflare.com/cdn/
-[nginx-cache]: https://www.nginx.com/blog/nginx-caching-guide/
+[nginx-cache]: https://web.archive.org/web/20240404205848/https://www.nginx.com/blog/nginx-caching-guide/
 [cache-removal-tool]: https://github.com/weserv/images/issues/14
 [hsts]: https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security
-[magick-formats]: https://www.imagemagick.org/script/formats.php#supported
+[magick-formats]: https://imagemagick.org/script/formats.php#supported
 [n-pages]: /docs/format.md#number-of-pages
 [quality]: /docs/format.md#quality
 [nginx]: https://nginx.org/
