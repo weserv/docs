@@ -1,5 +1,8 @@
 ---
 editLink: false
+title: Introducing API version 5
+date: 2019-09-01
+excerpt: Rewrote the entire codebase to C++, support for animated WebP and GIF images, plus many more improvements.
 ---
 
 # Introducing API version 5
