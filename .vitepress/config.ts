@@ -4,6 +4,7 @@ export default {
   lang: 'en-US',
   title: 'wsrv.nl',
   description: 'Image cache &amp; resize service',
+  cleanUrls: true,
   head: [
     ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' }],
     ['link', { rel: 'manifest', href: '/site.webmanifest' }],
@@ -18,9 +19,9 @@ export default {
       alt: 'Logo'
     },
     nav: [
-      { text: 'Documentation', link: '/docs/introduction', activeMatch: '/docs/' },
-      { text: 'News', link: '/news/index', activeMatch: '/news/' },
-      { text: 'FAQ', link: '/faq/index', activeMatch: '/faq/' },
+      { text: 'Documentation', link: '/docs/', activeMatch: '/docs/' },
+      { text: 'News', link: '/news/', activeMatch: '/news/' },
+      { text: 'FAQ', link: '/faq/', activeMatch: '/faq/' },
       {
         text: `v${version}`,
         items: [
@@ -42,7 +43,7 @@ export default {
           {
             text: 'Documentation',
             items: [
-              { text: 'Introduction', link: 'introduction' },
+              { text: 'Introduction', link: '/' },
               { text: 'Quick reference', link: 'quick-reference' },
               { text: 'Size', link: 'size' },
               { text: 'Fit', link: 'fit' },
@@ -98,4 +99,4 @@ export default {
     }
   },
   outDir: 'dist'
-}
+};

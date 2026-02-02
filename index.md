@@ -25,7 +25,7 @@ hero:
   actions:
     - theme: brand
       text: Read the documentation →
-      link: /docs/introduction.html
+      link: /docs/
     - theme: alt
       text: View on GitHub
       link: https://github.com/weserv/images
