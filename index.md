@@ -59,7 +59,7 @@ The CDN is provided by [Cloudflare](https://www.cloudflare.com/). Images are bei
 
 ### Widely used
 
-On average, we resize 6 million (6&times;10<sup>6</sup>) images per hour, which generates around 400TB of outbound traffic per month.
+On average, we resize 20 million (20&times;10<sup>6</sup>) images per hour, which generates around 1PB of outbound traffic per month.
 
 ### Features
 
