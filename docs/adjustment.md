@@ -4,8 +4,8 @@ Perform operations similar to those in image-editing applications.
 
 ## Background <Badge type="info" text="&bg=" />
 
-Sets the background color of the image. Supports a variety of color
-formats. In addition to the 140 color names supported by all modern browsers (listed [here](supported-colors.md)),
+Set the background color of the image. Supports a variety of color formats.
+In addition to the 140 color names supported by all modern browsers (listed [here](supported-colors.md)),
 it also accepts hexadecimal RGB and RBG alpha formats.
 
 **Valid hexadecimal formats:**
@@ -33,8 +33,8 @@ More info: [Issue #81 - Background setting](https://github.com/weserv/images/iss
 
 ## Blur <Badge type="info" text="&blur=" />
 
-Adds a blur effect to the image. When used without a value (`&blur`), performs a fast, mild blur of the
-output image. When a value is provided, performs a slower, more accurate Gaussian blur.
+Blur the image. When used without a value (`&blur`), performs a fast, mild blur of the image.
+When a value is provided, performs a slower, more accurate Gaussian blur.
 
 Use values between `0.3` and `1000`, representing the sigma of the Gaussian mask, where `sigma = 1 + radius / 2`.
 
@@ -56,7 +56,7 @@ More info: [Issue #69 - Allow blur transformation (with radius parameter)](https
 
 ## Contrast <Badge type="info" text="&con=" />
 
-Adjusts the image contrast. Use values between `-100` and `+100`, where `0` represents no change.
+Adjust the image contrast. Use values between `-100` and `+100`, where `0` represents no change.
 
 ::: code-group
 
@@ -74,7 +74,7 @@ Adjusts the image contrast. Use values between `-100` and `+100`, where `0` repr
 
 ## Filter <Badge type="info" text="&filt=" />
 
-Applies a filter effect to the image. Accepts `greyscale`, `sepia`, `duotone` or `negate`.
+Apply a filter effect to the image. Accepts `greyscale`, `sepia`, `duotone` or `negate`.
 
 ::: tip
 You can use `&start` and `&stop` to define the duotone colors. By default, it will use
@@ -98,8 +98,8 @@ You can use `&start` and `&stop` to define the duotone colors. By default, it wi
 
 ## Gamma <Badge type="info" text="&gam=" />
 
-Adjusts the image gamma. Use values between `1.0` and `3.0`. The default value is `2.2`, a suitable
-approximation for sRGB images.
+Apply a gamma correction. Use values between `1.0` and `3.0`. If no value is provided (`&gam`) or the
+value is outside this range, it defaults to `2.2`, which is a suitable approximation for sRGB images.
 
 ::: code-group
 
@@ -117,12 +117,12 @@ approximation for sRGB images.
 
 ## Modulate <Badge type="info" text="&mod=" />
 
-Transforms the image using brightness, saturation and hue rotation.
+Transform the image using brightness, saturation and hue rotation.
 Use `&mod=[brightness multiplier],[saturation multiplier],[hue degrees]` to define the below adjustments at once.
 
 ### Brightness <Badge type="info" text="&mod=" />
 
-Adjusts the brightness of the image. A multiplier greater than 1 will increase brightness, while a
+Adjust the brightness of the image. A multiplier greater than 1 will increase brightness, while a
 multiplier less than 1 will decrease the brightness.
 
 ::: code-group
@@ -141,8 +141,8 @@ multiplier less than 1 will decrease the brightness.
 
 ### Saturation <Badge type="info" text="&sat=" />
 
-Adjusts the saturation of the image. A multiplier greater than 1 will increase saturation, while a multiplier
-less than 1 will decrease the saturation.
+Adjust the saturation of the image. A multiplier greater than 1 will increase saturation, while a
+multiplier less than 1 will decrease the saturation.
 
 ::: code-group
 
@@ -160,7 +160,7 @@ less than 1 will decrease the saturation.
 
 ### Hue rotation <Badge type="info" text="&hue=" />
 
-Applies a hue rotation to the image. A positive hue rotation increases the hue value, while a negative
+Apply a hue rotation to the image. A positive hue rotation increases the hue value, while a negative
 rotation decreases the hue value.
 
 Values are given in degrees, there is no minimum or maximum value; `&hue=N` evaluates to `N` modulo 360.
@@ -181,14 +181,14 @@ Values are given in degrees, there is no minimum or maximum value; `&hue=N` eval
 
 ## Sharpen <Badge type="info" text="&sharp=" />
 
-Sharpen the image. Performs an accurate sharpen of the L channel in the LAB color space. Use in combination with
-`&sharpf=` and `&sharpj=` to control the level of sharpening in "flat" and "jagged" areas.
+Sharpen the image. Performs an accurate sharpen of the L channel in the LAB color space. Use in combination
+with `&sharpf=` and `&sharpj=` to control the level of sharpening in “flat” (m1) and “jagged” (m2) areas.
 
 Use values between `0.000001` and `10`, representing the sigma of the Gaussian mask,
 where `sigma = 1 + radius / 2`. When used without parameters, performs a fast, mild
 sharpen of the output image.
 
-The level of sharpening to apply to "flat" (`&sharpf=`) and "jagged" (`&sharpj=`) areas needs
+The level of sharpening to apply to “flat” (`&sharpf=`) and “jagged” (`&sharpj=`) areas needs
 to be given in the range of `0` and `1000000`.
 
 ::: code-group
@@ -207,8 +207,7 @@ to be given in the range of `0` and `1000000`.
 
 ## Tint <Badge type="info" text="&tint=" />
 
-Tint the image using the provided chroma while preserving the image luminance. See [here](adjustment.md#background)
-for the supported color formats.
+Tint the image using the provided color. See [here](adjustment.md#background) for the supported color formats.
 
 ::: code-group
 

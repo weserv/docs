@@ -1,6 +1,6 @@
 # Crop
 
-Controls how the image is aligned.
+Control how the image is aligned.
 
 ## Alignment position <Badge type="info" text="&a=" />
 
@@ -9,7 +9,7 @@ parameters should also be specified.
 
 ### Position-based
 
-Controls the starting location of the crop. When `&fit=contain` is set, it determines how the image is positioned inside its box.
+Control the starting location of the crop. When `&fit=contain` is set, it determines how the image is positioned inside its box.
 
 **Valid positions:**
 
@@ -61,7 +61,7 @@ default value is `0.5`, or the center of the image.
 
 ### Smart crop <Badge type="info" text="&a=[entropy,attention]" />
 
-An experimental strategy-based approach to crop the image by removing boring parts. This only works
+A strategy-based approach to crop the image by removing boring parts. This only works
 with `&fit=cover`.
 
 More info: [Issue #90 - Add support for smart crop](https://github.com/weserv/images/issues/90).
@@ -88,13 +88,13 @@ More info: [Issue #90 - Add support for smart crop](https://github.com/weserv/im
 
 ## Rectangle crop <Badge type="info" text="&c[x,y,w,h]=" />
 
-Crops the image to specific dimensions after any other resize operations.
+Extract/crop a region of the image after any other resize operations.
 
 Use percentage values (denoted by a value ending with `%`) to crop a relative portion of the image.
 
 ::: tip
-You can use `&precrop`, for a pre-resize crop behaviour.
-See [Issue #176 - Combine cropping with resizing](https://github.com/weserv/images/issues/176) for more information.
+You can use `&precrop`, for a pre-resize crop behavior.
+See [issue #176](https://github.com/weserv/images/issues/176) for more information.
 :::
 
 ::: code-group
@@ -113,9 +113,10 @@ See [Issue #176 - Combine cropping with resizing](https://github.com/weserv/imag
 
 ## Trim <Badge type="info" text="&trim=" />
 
-Trim "boring" pixels from all edges that contain values within a similarity of the top-left pixel. Trimming
-occurs before any resize operation. Use values between `1` and `254` to define a tolerance level to trim
-away similar color values. You also can specify just `&trim`, which defaults to a tolerance level of `10`.
+Trim pixels from all edges that contain values similar to a background color. By default, the background color
+is taken from the top-left pixel, but you can override this with the `&tbg=` parameter. A tolerance level from
+`1` to `254` controls how similar a color must be to the background before it is trimmed. You also can specify
+just `&trim`, which defaults to a tolerance level of `10`.
 
 More info: [Issue #39 - able to remove black/white whitespace](https://github.com/weserv/images/issues/39).
 

@@ -1,14 +1,14 @@
 # Format
 
-Controls the output properties of the image.
+Control the output properties of the image.
 
 ## Adaptive filter <Badge type="info" text="&af" />
 
-Use adaptive row filtering for reducing the PNG file size. This only works when the output image is `png`.
+Use adaptive row filtering for reducing the PNG file size. This is only supported for the `png` format.
 
 ## Base64 (data URL) <Badge type="info" text="&encoding=base64" />
 
-Encodes the image to be used directly in the src= of the `<img>`-tag.
+Encode the image to be used directly in the `src=` of the `<img>`-tag.
 Use [this link](/?url=wsrv.nl/lichtenstein.jpg&crop=100,100,720,530&encoding=base64){target="_blank"} to see the output result.
 
 More info: [Issue #59 - Return image base64 encoded](https://github.com/weserv/images/issues/59).
@@ -19,10 +19,10 @@ More info: [Issue #59 - Return image base64 encoded](https://github.com/weserv/i
 
 ## Cache-Control <Badge type="info" text="&maxage=" />
 
-Defines for how long an image should be cached by the browser. This will change the `max-age` of the
+Specify how long the browser should cache the image by setting the `max-age` directive of the
 `Cache-Control` HTTP-header.
 
-We define a "far-future expiration" of 1 year by default. The duration can be specified in days, weeks,
+We define a “far-future expiration” of 1 year by default. The duration can be specified in days, weeks,
 months, and years using the following suffixes:
 
 - `d`: days
@@ -30,8 +30,8 @@ months, and years using the following suffixes:
 - `M`: months, 30 days
 - `y`: years, 365 days
 
-A duration must be in the range of `1d` (1 day) to `1y` (1 year), inclusive. Any other value will be ignored
-and fallback to the default value of 1 year.
+The duration must be between `1d` (1 day) to `1y` (1 year), inclusive. Values outside this range will
+be ignored and default to 1 year.
 
 More info: [Issue #186 - Increase Cache-Control: max-age= to 1 year instead of 1 month](https://github.com/weserv/images/issues/186).
 
@@ -42,18 +42,18 @@ More info: [Issue #186 - Increase Cache-Control: max-age= to 1 year instead of 1
 ## Compression level <Badge type="info" text="&l=" />
 
 The zlib compression level. Use a value between `0` (no Deflate) and `9` (maximum Deflate). The default
-value is `6`. This only works when the output image is `png`.
+value is `6`. This is only supported for the `png` format.
 
 ## Lossless compression <Badge type="info" text="&ll" />
 
-Whether the resulting image should be lossless compressed. This only works when the output image is `webp`.
+Enable lossless compression for the output image. This is only supported for the `jxl`, `tiff` and `webp` formats.
 
 More info: [Issue #386 - webP output is always lossy and cannot be requested as lossless](https://github.com/weserv/images/issues/386).
 
 ## Default image <Badge type="info" text="&default=" />
 
-If there is a problem loading an image, then an error is shown. However, there might be a need where
-instead of giving a broken image to the user, you want a default image to be delivered.
+If an image fails to load, an error is shown by default. However, you may prefer to display a fallback
+image instead of showing a broken image to the user.
 
 More info: [Issue #37 - Return default image if the image's URL not found](https://github.com/weserv/images/issues/37).
 
@@ -77,14 +77,14 @@ Use `&default=1` to redirect to the original URL specified in `?url=`.
 
 ## Filename <Badge type="info" text="&filename=" />
 
-To specify the filename returned in the `Content-Disposition` header. The filename must only contain
+Specify the filename returned in the `Content-Disposition` header. The filename must contain only
 alphanumeric characters.
 
 More info: [Issue #122 - Specify filename](https://github.com/weserv/images/issues/122).
 
 ## Interlace / progressive <Badge type="info" text="&il" />
 
-Adds interlacing to GIF and PNG. JPEGs become progressive.
+Add interlacing to GIF and PNG. JPEGs become progressive.
 
 More info: [Issue #50 - Add parameter to use progressive JPEGs](https://github.com/weserv/images/issues/50).
 
@@ -104,8 +104,8 @@ More info: [Issue #50 - Add parameter to use progressive JPEGs](https://github.c
 
 ## Number of pages <Badge type="info" text="&n=" />
 
-To select the number of pages to render. The default value is `1`. Set to `-1` to mean "until the end of
-the document".
+Select the number of pages to render. Defaults to `1`. Set to `-1` to render all pages
+until the end of the document.
 
 ::: tip
 `-1` will be useful if you need to resize an animated WebP or GIF image.
@@ -127,8 +127,8 @@ the document".
 
 ## Output <Badge type="info" text="&output=" />
 
-Encodes the image to a specific format. Accepts `jpg`, `png`, `gif`, `tiff`, `webp` or `json`. If none is
-given, it will honor the origin image format.
+Encode the image to a specified format. Accepts `jpg`, `jxl`, `png`, `gif`, `tiff`, `webp` or `json`. If no format
+is provided, it defaults to the origin image format.
 
 More info: [Issue #62 - Format conversion](https://github.com/weserv/images/issues/62).
 
@@ -148,13 +148,14 @@ More info: [Issue #62 - Format conversion](https://github.com/weserv/images/issu
 
 ## Page <Badge type="info" text="&page=" />
 
-To load a given page (for an PDF, TIFF and multi-size ICO file). The value is numbered from zero. For a
-multi-resolution image, you can use `-1` to get the largest page and `-2` to get the smallest page.
+Load a specific page from a multi-page or multi-resolution input (GIF, WebP, TIFF, PDF, ICO). Use a
+zero-based index. For multi-resolution images, use `-1` to load the largest page and `-2` to load the
+smallest.
 
 ## Quality <Badge type="info" text="&q=" />
 
-Defines the quality of the image. Use values between `1` and `100`. Defaults to `80`. This only works
-when the output image is `jpg`, `tiff` or `webp`.
+Set the quality of the image. Use values between `1` and `100`. Defaults to `80`. This is only supported
+for the `jpg`, `jxl`, `tiff` and `webp` formats.
 
 ::: code-group
 

@@ -4,47 +4,48 @@ aside: false
 
 # Quick reference
 
-| Name                    | GET        | Description                                                             |                               |
-| ----------------------- | ---------- | ----------------------------------------------------------------------- | ----------------------------: |
-| Width                   | `w`        | Sets the width of the image, in pixels.                                 |                 [info][width] |
-| Height                  | `h`        | Sets the height of the image, in pixels.                                |                [info][height] |
-| Device pixel ratio      | `dpr`      | Sets the output density of the image.                                   |                   [info][dpr] |
-| Fit                     | `fit`      | Sets how the image is fitted to its target dimensions.                  |                   [info][fit] |
-| Contain background      | `cbg`      | Sets the background color when using `&fit=contain`.                    |            [info][contain-bg] |
-| Without enlargement     | `we`       | Do not enlarge the image.                                               |   [info][without-enlargement] |
-| Alignment position      | `a`        | Sets how the image is aligned.                                          |    [info][alignment-position] |
-| Rectangle crop          | `crop`     | Crops the image to specific dimensions.                                 |        [info][rectangle-crop] |
-| Pre-resize crop         | `precrop`  | A pre-resize crop behaviour.                                            |        [info][rectangle-crop] |
-| Trim                    | `trim`     | Trim "boring" pixels from all edges.                                    |                  [info][trim] |
-| Masking                 | `mask`     | Sets the mask type from a predefined list.                              |                  [info][mask] |
-| Mask trim               | `mtrim`    | Removes the remaining whitespace from the mask.                         |             [info][mask-trim] |
-| Mask background         | `mbg`      | Sets the background color of the mask.                                  |               [info][mask-bg] |
-| Flip                    | `flip`     | Mirror the image vertically (up-down) about the x-axis.                 |                  [info][flip] |
-| Flop                    | `flop`     | Mirror the image horizontally (left-right) about the y-axis.            |                  [info][flop] |
-| Rotation                | `ro`       | Rotates the image.                                                      |              [info][rotation] |
-| Rotation background     | `rbg`      | Sets the background color when rotating by arbitrary angles.            |           [info][rotation-bg] |
-| Background              | `bg`       | Sets the background color of the image.                                 |            [info][background] |
-| Blur                    | `blur`     | Adds a blur effect to the image.                                        |                  [info][blur] |
-| Contrast                | `con`      | Adjusts the image contrast.                                             |              [info][contrast] |
-| Filter                  | `filt`     | Applies a filter effect to the image.                                   |                [info][filter] |
-| Gamma                   | `gam`      | Adjusts the image gamma.                                                |                 [info][gamma] |
-| Modulate                | `mod`      | Transforms the image using brightness, saturation and hue rotation.     |              [info][modulate] |
-| Saturation              | `sat`      | Adjusts the saturation of the image.                                    |            [info][saturation] |
-| Hue rotation            | `hue`      | Applies a hue rotation to the image.                                    |          [info][hue-rotation] |
-| Sharpen                 | `sharp`    | Sharpen the image.                                                      |               [info][sharpen] |
-| Tint                    | `tint`     | Tint the image.                                                         |                  [info][tint] |
-| Adaptive filter         | `af`       | A filter algorithm that can be applied before compression.              |       [info][adaptive-filter] |
-| Base64 (data URL)       | `encoding` | Encodes the image to be used directly in the `src=` of the `<img>`-tag. |                [info][base64] |
-| Cache-Control           | `maxage`   | How long an image should be cached by the browser.                      |         [info][cache-control] |
-| Compression level       | `l`        | The zlib compression level.                                             |     [info][compression-level] |
-| Lossless compression    | `ll`       | Whether the resulting image should be lossless compressed.              |  [info][lossless-compression] |
-| Default image           | `default`  | Redirects to a default image when there is a problem loading an image.  |               [info][default] |
-| Filename                | `filename` | To specify the filename.                                                |              [info][filename] |
-| Interlace / progressive | `il`       | Adds interlacing to GIF and PNG. JPEG's become progressive.             | [info][interlace-progressive] |
-| Number of pages         | `n`        | To select the the number of pages to render.                            |               [info][n-pages] |
-| Output                  | `output`   | Encodes the image to a specific format.                                 |                [info][output] |
-| Page                    | `page`     | To load a given page.                                                   |                  [info][page] |
-| Quality                 | `q`        | Defines the quality of the image.                                       |               [info][quality] |
+| Name                    | GET        | Description                                                            |                               |
+| ----------------------- | ---------- |------------------------------------------------------------------------| ----------------------------: |
+| Width                   | `w`        | Set the width of the image, in pixels or as a percentage.              |                 [info][width] |
+| Height                  | `h`        | Set the height of the image, in pixels or as a percentage.             |                [info][height] |
+| Device pixel ratio      | `dpr`      | Set the output density of the image.                                   |                   [info][dpr] |
+| Fit                     | `fit`      | Set how the image is fitted to its target dimensions.                  |                   [info][fit] |
+| Contain background      | `cbg`      | Set the background color when using `&fit=contain`.                    |            [info][contain-bg] |
+| Without enlargement     | `we`       | Do not enlarge the image.                                              |   [info][without-enlargement] |
+| Alignment position      | `a`        | Set how the image is aligned.                                          |    [info][alignment-position] |
+| Rectangle crop          | `crop`     | Crop the image to specific dimensions.                                 |        [info][rectangle-crop] |
+| Pre-resize crop         | `precrop`  | A pre-resize crop behaviour.                                           |        [info][rectangle-crop] |
+| Trim                    | `trim`     | Trim pixels from all edges.                                            |                  [info][trim] |
+| Trim background         | `tbg`      | Set the background color for trimming similar values.                  |               [info][trim-bg] |
+| Masking                 | `mask`     | Set the mask type from a predefined list.                              |                  [info][mask] |
+| Mask trim               | `mtrim`    | Remove the remaining whitespace from the mask.                         |             [info][mask-trim] |
+| Mask background         | `mbg`      | Set the background color of the mask.                                  |               [info][mask-bg] |
+| Flip                    | `flip`     | Mirror the image vertically (up-down) about the x-axis.                |                  [info][flip] |
+| Flop                    | `flop`     | Mirror the image horizontally (left-right) about the y-axis.           |                  [info][flop] |
+| Rotation                | `ro`       | Rotate the image.                                                      |              [info][rotation] |
+| Rotation background     | `rbg`      | Set the background color when rotating by arbitrary angles.            |           [info][rotation-bg] |
+| Background              | `bg`       | Set the background color of the image.                                 |            [info][background] |
+| Blur                    | `blur`     | Blur the image.                                                        |                  [info][blur] |
+| Contrast                | `con`      | Adjust the image contrast.                                             |              [info][contrast] |
+| Filter                  | `filt`     | Apply a filter effect to the image.                                    |                [info][filter] |
+| Gamma                   | `gam`      | Apply a gamma correction.                                              |                 [info][gamma] |
+| Modulate                | `mod`      | Transform the image using brightness, saturation and hue rotation.     |              [info][modulate] |
+| Saturation              | `sat`      | Adjust the saturation of the image.                                    |            [info][saturation] |
+| Hue rotation            | `hue`      | Apply a hue rotation to the image.                                     |          [info][hue-rotation] |
+| Sharpen                 | `sharp`    | Sharpen the image.                                                     |               [info][sharpen] |
+| Tint                    | `tint`     | Tint the image.                                                        |                  [info][tint] |
+| Adaptive filter         | `af`       | A filter algorithm that can be applied before compression.             |       [info][adaptive-filter] |
+| Base64 (data URL)       | `encoding` | Encode the image to be used directly in the `src=` of the `<img>`-tag. |                [info][base64] |
+| Cache-Control           | `maxage`   | Specify how long the browser should cache the image.                   |         [info][cache-control] |
+| Compression level       | `l`        | The zlib compression level.                                            |     [info][compression-level] |
+| Lossless compression    | `ll`       | Enable lossless compression for the output image.                      |  [info][lossless-compression] |
+| Default image           | `default`  | Redirect to a default image when an image fails to load.               |               [info][default] |
+| Filename                | `filename` | Specify the filename in the `Content-Disposition` header               |              [info][filename] |
+| Interlace / progressive | `il`       | Add interlacing to GIF and PNG. JPEG's become progressive.             | [info][interlace-progressive] |
+| Number of pages         | `n`        | Select the number of pages to render.                                  |               [info][n-pages] |
+| Output                  | `output`   | Encode the image to a specific format.                                 |                [info][output] |
+| Page                    | `page`     | Load a specific page.                                                  |                  [info][page] |
+| Quality                 | `q`        | Set the quality of the image.                                          |               [info][quality] |
 
 [width]: size.md#width
 [height]: size.md#height
@@ -55,6 +56,7 @@ aside: false
 [alignment-position]: crop.md#alignment-position
 [rectangle-crop]: crop.md#rectangle-crop
 [trim]: crop.md#trim
+[trim-bg]: crop.md#trim
 [mask]: mask.md#mask-type
 [mask-trim]: mask.md#mask-trim
 [mask-bg]: mask.md#mask-background

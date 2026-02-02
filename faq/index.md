@@ -73,7 +73,7 @@ information on how we collect, store and use any data, can be found in our [priv
 
 ## Where are your servers located?
 
-Our servers are located near Paris (France) and Falkenstein (Germany). We also use Cloudflare, [Cloudflare
+Our servers are located near Helsinki (Finland) and Falkenstein (Germany). We also use Cloudflare, [Cloudflare
 has servers more close to your location][cloudflare-network], and they are fast.
 
 For now, our servers are with [OVH][ovh], [Scaleway][scaleway] and [Hetzner][hetzner] this may change in the future. We've
@@ -141,7 +141,7 @@ We do, but there is some caching.
 
 ## What is caching?
 
-A cache is a place where data (such as images) is temporary stored, to improve performance when the data
+A cache is a place where data (such as images) is temporarily stored, to improve performance when the data
 is requested again. If the data is requested again, it may be served from the cache. For this service,
 the most important bits are our server cache, and your browser cache.
 
@@ -169,8 +169,8 @@ your browser cache.
 
 ## Can I remove an image from your server(s) cache?
 
-Not yet, a method to remove anything from our server side cache is still worked on. You can follow
-[Issue #14 - Remove cached images (by API/manual)][cache-removal-tool] for further updates.
+Not yet, a method to remove anything from our server side cache is still worked on. Please subscribe to
+[issue #14][cache-removal-tool] for possible updates.
 
 ## Why am I redirected to https:// even when I request http://?
 
@@ -195,8 +195,7 @@ supporting all [libMagick image file types][magick-formats].
 ## Do you support animated images? E.g. animated .gif?
 
 We support animated WebP and GIF images through the use of [`&n=-1`][n-pages]. By default, the first frame of
-each image is processed. We don't support APNG, since the official libpng reference implementation
-doesn't support this extension.
+each image is processed. Please subscribe to [issue #255][apng-support] for possible updates regarding APNG support.
 
 ## Can I use my own (sub)domain? E.g. by using a CNAME to wsrv.nl?
 
@@ -313,6 +312,7 @@ your question by featuring it on this page!
 [hsts]: https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security
 [magick-formats]: https://imagemagick.org/script/formats.php#supported
 [n-pages]: /docs/format.md#number-of-pages
+[apng-support]: https://github.com/weserv/images/issues/255
 [quality]: /docs/format.md#quality
 [nginx]: https://nginx.org/
 [cache-control]: /docs/format.md#cache-control

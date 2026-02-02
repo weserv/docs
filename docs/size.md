@@ -1,11 +1,11 @@
 # Size
 
-Controls how the image needs to be resized. You can use both `&w=` and `&h=` parameters or only one
+Control how the image needs to be resized. You can use both `&w=` and `&h=` parameters or only one
 of them: the other dimension is automatically updated.
 
 ## Width <Badge type="info" text="&w=" />
 
-Sets the width of the image, in pixels.
+Set the width of the image, in pixels or as a percentage (ending with `%`).
 
 ::: code-group
 
@@ -23,7 +23,7 @@ Sets the width of the image, in pixels.
 
 ## Height <Badge type="info" text="&h=" />
 
-Sets the height of the image, in pixels.
+Set the height of the image, in pixels or as a percentage (ending with `%`).
 
 ::: code-group
 

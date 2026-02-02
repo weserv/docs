@@ -1,6 +1,6 @@
 # Fit
 
-Controls how the image is fitted to its target dimensions. Below are a couple of examples. Some of these
+Control how the image is fitted to its target dimensions. Below are a couple of examples. Some of these
 values are based on the [object-fit](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit) CSS property.
 
 <Image
@@ -48,7 +48,7 @@ greater than or equal to both those specified.
 
 ## Cover <Badge type="info" text="&fit=cover" />
 
-Crop the image to cover both provided dimensions.
+Preserving aspect ratio, resize the image to cover both provided dimensions by cropping/clipping to fit.
 
 ::: code-group
 
@@ -84,8 +84,9 @@ Ignore the aspect ratio of the input and stretch to both provided dimensions.
 
 ## Contain <Badge type="info" text="&fit=contain" />
 
-Embed within both provided dimensions. The remaining space can be filled with a background color by
-using `&cbg=`. See [here](adjustment.md#background) for the supported color formats.
+Preserving aspect ratio, contain within both provided dimensions using “letterboxing” where necessary.
+The remaining space can be filled with a background color by using `&cbg=`. See [here](adjustment.md#background) for the
+supported color formats.
 
 More info: [Issue #80 - letterbox images that need to fit](https://github.com/weserv/images/issues/80).
 

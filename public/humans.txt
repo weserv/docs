@@ -17,10 +17,6 @@
 #############################################
 #############################################
 
-/* ABOUT THIS FILE */
-  Description: We Are People, Not Machines
-  More information: https://humanstxt.org/
-
 /* TEAM */
   Administrator: Andries Louw Wolthuizen
   Contact: admin [at] weserv.nl
@@ -37,7 +33,7 @@
 /* SITE */
   Language: English
   Coded with: C / C++
-  Software: nginx, libvips, Redis
+  Software: nginx, libvips, Valkey
   Services: Cloudflare, OpenDNS
 
 /* SECURITY */

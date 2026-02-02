@@ -1,10 +1,10 @@
 # Mask
 
-Controls the visible and non-visible area of the image.
+Control the visible and non-visible area of the image.
 
 ## Mask type <Badge type="info" text="&mask=" />
 
-Sets the mask type from a predefined list of shapes.
+Set the mask type from a predefined list of shapes.
 
 More info: [Issue #49 - Add circle effect to photos](https://github.com/weserv/images/issues/49).
 
@@ -37,7 +37,7 @@ More info: [Issue #49 - Add circle effect to photos](https://github.com/weserv/i
 
 ## Mask trim <Badge type="info" text="&mtrim" />
 
-Removes the remaining whitespace from the mask.
+Remove the remaining whitespace from the mask.
 
 ::: code-group
 
@@ -55,7 +55,7 @@ Removes the remaining whitespace from the mask.
 
 ## Mask background <Badge type="info" text="&mbg=" />
 
-Sets the background color of the mask. See [here](adjustment.md#background) for the supported color formats.
+Set the background color of the mask. See [here](adjustment.md#background) for the supported color formats.
 
 ::: code-group
 

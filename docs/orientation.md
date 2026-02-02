@@ -42,13 +42,13 @@ This always occurs after rotation, if any.
 
 ## Rotation <Badge type="info" text="&ro=" />
 
-Rotates the image by either an explicit angle or auto-orient based on the EXIF `Orientation` tag.
+Rotate the image.
 
-If an angle is specified, it is converted to a valid positive degree rotation. For example, `-450` will
-produce a `270` degree rotation. When rotating by an angle other than a multiple of 90, the background
-color can be provided with the `&rbg=` parameter. See [here](adjustment.md#background) for the supported color formats.
+The provided angle is converted to a valid positive degree rotation. For example, `-450` will produce a 
+270 degree rotation. When rotating by an angle other than a multiple of 90, the background color can be
+provided with the `&rbg=` parameter. See [here](adjustment.md#background) for the supported color formats.
 
-If no angle is provided, it is determined from the EXIF data.
+Images are always auto-oriented based on the EXIF `Orientation` tag.
 
 ::: code-group
 
