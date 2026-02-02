@@ -5,7 +5,7 @@ and display it.
 
 - We support a good range of image formats, including JPEG, PNG, BMP, GIF, TIFF, WebP, PDF and SVG.
   - There's even support for [animated WebP and GIF images](format.md#number-of-pages).
-- We support IPv6, [serving dual stack](https://ipv6-test.com/validate.php?url=wsrv.nl), and supporting [IPv6-only origin hosts](/?url=ipv6.google.com/logos/logo.gif){target="_blank"}.
+- We support IPv6, [serving dual stack](https://ipv6-test.com/validate.php?url=wsrv.nl), and supporting [IPv6-only origin hosts](/?url=ipv6.google.com/images/ipv6_logo.gif&n=-1){target="_blank"}.
 - For secure connections over TLS/SSL, you can use [https://wsrv.nl/](/).
   - This can be very useful for embedding HTTP images on HTTPS websites. HTTPS origin hosts can be
     used by [prefixing the hostname with https://](https://github.com/weserv/images/issues/33).

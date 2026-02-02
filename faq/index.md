@@ -89,7 +89,7 @@ Wonderful, thanks for asking! Seriously, they provide awesome service, and are a
 
 ## What is your relationship with Cloudflare?
 
-We've started this service in 2007, use [Cloudflare](https://www.cloudflare.com/) since early 2012, and are on the free-tier since 2015.
+We've started this service in 2007, use [Cloudflare][cloudflare] since early 2012, and are on the free-tier since 2015.
 Costs for the servers to support wsrv.nl are really low, and it serves as a great testbed for new
 technologies. Cloudflare is based on the same [principles to provide their services][cloudflare-cdn].
 
@@ -308,7 +308,7 @@ your question by featuring it on this page!
 [ip-list]: /ips.txt
 [cloudflare]: https://www.cloudflare.com/
 [cloudflare-cdn]: https://www.cloudflare.com/cdn/
-[nginx-cache]: https://web.archive.org/web/20240404205848/https://www.nginx.com/blog/nginx-caching-guide/
+[nginx-cache]: https://blog.nginx.org/blog/nginx-caching-guide
 [cache-removal-tool]: https://github.com/weserv/images/issues/14
 [hsts]: https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security
 [magick-formats]: https://imagemagick.org/script/formats.php#supported
